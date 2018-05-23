@@ -1,0 +1,48 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                               controllers.MainController.index
+GET     /godpage                        controllers.MainController.getGodPage
+POST    /userpage                       controllers.MainController.createUserPage
+#GET     /getuserpage                controllers.MainController.getUserPage
+
+GET     /products                       controllers.ProductController.index
+POST    /products/addproduct            controllers.ProductController.addProduct
+GET     /products/getproducts           controllers.ProductController.getProducts
+
+
+GET     /opinions                       controllers.OpinionController.opinions
+POST    /opinions/addopinion            controllers.OpinionController.addOpinion
+#here is test page
+GET     /opinions/getopinions           controllers.OpinionController.getOpinions
+
+
+GET     /types                          controllers.ProductTypeController.types
+POST    /types/addtype                  controllers.ProductTypeController.addProductType
+GET     /types/gettypes                 controllers.ProductTypeController.getProductTypes
+
+GET     /pays                           controllers.PayController.pay
+POST    /pays/addpay                    controllers.PayController.addPay
+GET     /pays/getpays                   controllers.PayController.getPays
+
+GET     /baskets                        controllers.BasketController.baskets
+POST    /baskets/addbasket              controllers.BasketController.addBasket
+GET     /baskets/getbaskets             controllers.BasketController.getBaskets
+
+GET     /keyWords                       controllers.KeyWordController.keyWords
+POST    /keyWords/addkeyword            controllers.KeyWordController.addKeyWord
+GET     /keyWords/getkeywords           controllers.KeyWordController.getKeyWords
+
+GET     /orders                         controllers.OrderController.order
+POST    /orders/addorder                controllers.OrderController.addOrder
+GET     /orders/getorders               controllers.OrderController.getOrders
+
+GET     /basketproducts                 controllers.BasketProductController.basketProducts
+POST    /basketproducts/addbaskprod     controllers.BasketProductController.addBasketProduct
+GET     /basketproducts/getbaskprods    controllers.BasketProductController.getBasketProducts
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

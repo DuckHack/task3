@@ -1,0 +1,20 @@
+@()(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+    @request.messages(key)
+}
+
+@main("Welcome to Ebiznes") {
+    <H2>Welcome to the god page</H2>
+        <div class="buttons">
+            <a href="@routes.BasketController.baskets()" >Create Basket</a>
+        </div><div class="buttons"><br>
+            <a href="@routes.KeyWordController.keyWords()" >Create KeyWord</a>
+        </div><div class="buttons"><br>
+            <a href="@routes.ProductController.index()" >Create product</a>
+        </div><div class="buttons"><br>
+            <a href="@routes.ProductTypeController.types()" >Create product type</a>
+        </div>
+}

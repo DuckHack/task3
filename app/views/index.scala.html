@@ -1,0 +1,29 @@
+@(basket: Seq[Basket])(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+   @request.messages(key)
+}
+
+@main("Welcome to Ebiznes") {
+	<H2>Welcome to the main page</H2>
+  @form(routes.MainController.createUserPage()) {
+	  <select name="user_id" id="basket">
+		@for(b <- basket){
+			<option value="@b.id">@b.user_id</option>
+		}
+	  </select>
+
+
+		@CSRF.formField
+
+		<div class="buttons">
+			<input type="submit" value="Continue"/>
+		</div>
+
+	  	<div class="buttons">
+			<a href="@routes.MainController.getGodPage()" >Continue like a god</a>
+		</div>
+	}
+}

@@ -1,0 +1,4 @@
+[warn] /home/andreik/studies/2d_Sem/e-buisnes/play-products-crud-slick-master/app/models/OpinionRepository.scala:6:15: imported `ProductRepository' is permanently hidden by definition of class ProductRepository in package models
+[warn] import models.ProductRepository
+[warn]               ^
+[warn] one warning found

@@ -1,0 +1,23 @@
+@(basket: Form[CreateBasketForm])(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+   @request.messages(key)
+}
+
+@main("Baskets page") {
+  @form(routes.BasketController.addBasket()) {
+		@inputText(basket("user_id"))
+
+		@CSRF.formField
+
+		<div class="buttons">
+			<input type="submit" value="Add Basket"/>
+		</div>
+
+	  	<div class="buttons">
+			<a href="@routes.BasketController.getBaskets()" >Get all baskets</a>
+		</div>
+	}
+}
