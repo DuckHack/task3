@@ -1,9 +1,10 @@
 package models
 
-import javax.inject.{ Inject, Singleton }
+import javax.inject.{Inject, Singleton}
 import play.api.db.slick.DatabaseConfigProvider
 import slick.jdbc.JdbcProfile
-import scala.concurrent.{ Future, ExecutionContext }
+
+import scala.concurrent.{ExecutionContext, Future}
 
 /**
   * A repository for people.
@@ -12,9 +13,9 @@ import scala.concurrent.{ Future, ExecutionContext }
   */
 
 @Singleton
-class OrderRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
+class OrderRepository @Inject() (basketRepository: BasketRepository, dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
   // We want the JdbcProfile for this provider
-  private val dbConfig = dbConfigProvider.get[JdbcProfile]
+  val dbConfig = dbConfigProvider.get[JdbcProfile]
 
   // These imports are important, the first one brings db into scope, which will let you do the actual db operations.
   // The second one brings the Slick DSL into scope, which lets you define the table and other queries.
@@ -25,7 +26,7 @@ class OrderRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impli
     * Here we define the table. It will have a name of people
     */
 
-  private final class OrderTable(tag: Tag) extends Table[Order](tag, "orders") {
+  final class OrderTable(tag: Tag) extends Table[Order](tag, "orders") {
 
     /** The ID column, which is the primary key, and auto incremented */
     def id = column[Int]("id", O.PrimaryKey, O.AutoInc)
@@ -49,7 +50,10 @@ class OrderRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impli
     * The starting point for all queries on the people table.
     */
 
+    import basketRepository.BasketTable
+
   private val orders = TableQuery[OrderTable]
+  private val basket = TableQuery[BasketTable]
 
   /**
     * Create a person with the given name and age.
@@ -75,4 +79,17 @@ class OrderRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impli
   def list(): Future[Seq[Order]] = db.run {
     orders.result
   }
+
+
+  def get(in_basket_id: Int): Future[Seq[Order]] = db.run {
+    println("inside of getOrder " + in_basket_id)
+    orders.filter(_.basket_id === in_basket_id).result
+  }
+
+
+  def del(del_id: Int ) = db.run {
+    println("inside of del method Order")
+    orders.filter(_.id === del_id).delete
+  }
+
 }

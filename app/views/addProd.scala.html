@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>$Title$</title>
-    </head>
-    <body>
-$END$
-    </body>
-</html>
+@(product: Form[CreateProductForm], prod_type: Seq[ProductType], delProd: Form[DeleteProductForm], products: Seq[Product])(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+    @request.messages(key)
+}
+
+@main("Welcome to Ebiznes") {
+    @form(routes.ProductController.addProduct()) {
+        @inputText(product("name"))
+        @inputText(product("description"))
+        @inputText(product("price"))
+        <select name="type_id" id="type_id">
+        @for(p_type <- prod_type){
+            <option value="@p_type.id">@p_type.name</option>
+        }
+        </select>
+
+
+        @CSRF.formField
+
+        <div class="buttons">
+            <input type="submit" value="Add Product"/>
+        </div>
+    }
+
+    <div class="buttons">
+        <a href="@routes.ProductController.getProducts()" >Get all products</a>
+    </div>
+
+    @form(routes.ProductController.delProduct()) {
+        <select name="id" id="id">
+        @for(p <- products){
+            <option value="@p.id">@p.name</option>
+        }
+        </select>
+
+
+        @CSRF.formField
+
+        <div class="buttons">
+            <input type="submit" value="Delete Product"/>
+        </div>
+    }
+}

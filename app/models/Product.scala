@@ -8,7 +8,7 @@ import slick.jdbc.JdbcProfile
 import scala.concurrent.{ Future, ExecutionContext }
 
 
-case class Product(id: Long, name: String, description: String, price: Int, type_id: Int)
+case class Product(id: Int, name: String, description: String, price: Int, type_id: Int)
 
 object Product {
   implicit val productFormat = Json.format[Product]

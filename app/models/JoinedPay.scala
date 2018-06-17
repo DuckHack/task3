@@ -1,4 +1,9 @@
 package models
 
-case class JoinedOrder(id: Int, basket_id: Int, total: Int)
+import play.api.libs.json._
 
+case class JoinedPay(id: Int, total: Int, order_id: Int)
+
+object JoinedPay {
+  implicit val JoinedPayFormat = Json.format[JoinedPay]
+}

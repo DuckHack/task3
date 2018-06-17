@@ -54,6 +54,7 @@ class PayRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, orderRe
   import orderRepository.OrderTable
 
   private val pay = TableQuery[PayTable]
+  private val order = TableQuery[OrderTable]
   /**
     * Create a person with the given name and age.
     *
@@ -78,4 +79,20 @@ class PayRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, orderRe
   def list(): Future[Seq[Pay]] = db.run {
     pay.result
   }
+
+
+  //case class JoinedPay(id: Int, total: Int, order_id: Int)
+  def get(basket_id: Int): Future[Seq[JoinedPay]] = db.run {
+    println("inside of pay" + basket_id)
+    order.filter(_.id=== basket_id).join(pay).on(_.id === _.order_id).
+      result.map(s => s.map(
+      a => new JoinedPay(a._2.id, a._1.total, a._1.id)))
+  }
+
+
+  def del(del_id: Int ) = db.run {
+    println("inside of del method pay")
+    pay.filter(_.id === del_id).delete
+  }
+
 }

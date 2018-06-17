@@ -27,11 +27,11 @@ create table "basket"(
 );
 
 create table "basket_product" (
-    "id" integer primary key autoincrement,
-    "product_id" integer not null,
-    "basket_id" integer not null,
-    foreign key("product_id") references product(id),
-    foreign key("basket_id") references basket(id)
+  "id" integer primary key autoincrement,
+  "product_id" integer not null,
+  "basket_id" integer not null,
+  foreign key("product_id") references product(id),
+  foreign key("basket_id") references basket(id)
 );
 
 create table "orders" (

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/andreik/studies/2d_Sem/e-buisnes/play-products-crud-slick-master/conf/routes
-// @DATE:Wed May 23 00:37:17 MSK 2018
+// @SOURCE:/home/andreik/studies/2d_Sem/e-buisnes/task3/conf/routes
+// @DATE:Sun Jun 17 17:43:07 MSK 2018
 
 package router
 
@@ -17,21 +17,21 @@ class Routes(
   MainController_1: controllers.MainController,
   // @LINE:11
   ProductController_4: controllers.ProductController,
-  // @LINE:16
+  // @LINE:17
   OpinionController_3: controllers.OpinionController,
-  // @LINE:22
+  // @LINE:23
   ProductTypeController_0: controllers.ProductTypeController,
-  // @LINE:26
+  // @LINE:28
   PayController_7: controllers.PayController,
-  // @LINE:30
-  BasketController_6: controllers.BasketController,
   // @LINE:34
+  BasketController_6: controllers.BasketController,
+  // @LINE:41
   KeyWordController_5: controllers.KeyWordController,
-  // @LINE:38
+  // @LINE:46
   OrderController_9: controllers.OrderController,
-  // @LINE:42
+  // @LINE:53
   BasketProductController_2: controllers.BasketProductController,
-  // @LINE:48
+  // @LINE:60
   Assets_8: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -42,21 +42,21 @@ class Routes(
     MainController_1: controllers.MainController,
     // @LINE:11
     ProductController_4: controllers.ProductController,
-    // @LINE:16
+    // @LINE:17
     OpinionController_3: controllers.OpinionController,
-    // @LINE:22
+    // @LINE:23
     ProductTypeController_0: controllers.ProductTypeController,
-    // @LINE:26
+    // @LINE:28
     PayController_7: controllers.PayController,
-    // @LINE:30
-    BasketController_6: controllers.BasketController,
     // @LINE:34
+    BasketController_6: controllers.BasketController,
+    // @LINE:41
     KeyWordController_5: controllers.KeyWordController,
-    // @LINE:38
+    // @LINE:46
     OrderController_9: controllers.OrderController,
-    // @LINE:42
+    // @LINE:53
     BasketProductController_2: controllers.BasketProductController,
-    // @LINE:48
+    // @LINE:60
     Assets_8: controllers.Assets
   ) = this(errorHandler, MainController_1, ProductController_4, OpinionController_3, ProductTypeController_0, PayController_7, BasketController_6, KeyWordController_5, OrderController_9, BasketProductController_2, Assets_8, "/")
 
@@ -76,27 +76,39 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products""", """controllers.ProductController.index"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products/addproduct""", """controllers.ProductController.addProduct"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products/getproducts""", """controllers.ProductController.getProducts"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products/delproduct""", """controllers.ProductController.delProduct"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """opinions""", """controllers.OpinionController.opinions"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """opinions/addopinion""", """controllers.OpinionController.addOpinion"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """opinions/getopinions""", """controllers.OpinionController.getOpinions"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """opinions/delopinion""", """controllers.OpinionController.delOpinion"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """types""", """controllers.ProductTypeController.types"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """types/addtype""", """controllers.ProductTypeController.addProductType"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """types/gettypes""", """controllers.ProductTypeController.getProductTypes"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """types/deltype""", """controllers.ProductTypeController.delProductType"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """pays""", """controllers.PayController.pay"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """pays/addpay""", """controllers.PayController.addPay"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """pays/getpays""", """controllers.PayController.getPays"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """pays/get/""" + "$" + """basket_id<[^/]+>""", """controllers.PayController.get(basket_id:String)"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """pays/delpay""", """controllers.PayController.delPay"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """baskets""", """controllers.BasketController.baskets"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """baskets/addbasket""", """controllers.BasketController.addBasket"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """baskets/getbaskets""", """controllers.BasketController.getBaskets"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """baskets/get/""" + "$" + """user_id<[^/]+>""", """controllers.BasketController.get(user_id:String)"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """baskets/deletebasket""", """controllers.BasketController.delBasket"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """keyWords""", """controllers.KeyWordController.keyWords"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """keyWords/addkeyword""", """controllers.KeyWordController.addKeyWord"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """keyWords/getkeywords""", """controllers.KeyWordController.getKeyWords"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """keyWords/delkeyword""", """controllers.KeyWordController.delKeyword"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders""", """controllers.OrderController.order"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders/addorder""", """controllers.OrderController.addOrder"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders/getorders""", """controllers.OrderController.getOrders"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders/getorders/""" + "$" + """basket_id<[^/]+>""", """controllers.OrderController.get(basket_id:String)"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders/delorder""", """controllers.OrderController.delOrder"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """basketproducts""", """controllers.BasketProductController.basketProducts"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """basketproducts/addbaskprod""", """controllers.BasketProductController.addBasketProduct"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """basketproducts/getbaskprods""", """controllers.BasketProductController.getBasketProducts"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """basketproducts/getbyid/""" + "$" + """basket_id<[^/]+>""", """controllers.BasketProductController.get(basket_id:String)"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """basketproducts/delbasketprod/""" + "$" + """prod_id<[^/]+>""", """controllers.BasketProductController.del(prod_id:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -213,11 +225,29 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_OpinionController_opinions6_route = Route("GET",
+  // @LINE:14
+  private[this] lazy val controllers_ProductController_delProduct6_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("products/delproduct")))
+  )
+  private[this] lazy val controllers_ProductController_delProduct6_invoker = createInvoker(
+    ProductController_4.delProduct,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ProductController",
+      "delProduct",
+      Nil,
+      "DELETE",
+      this.prefix + """products/delproduct""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:17
+  private[this] lazy val controllers_OpinionController_opinions7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("opinions")))
   )
-  private[this] lazy val controllers_OpinionController_opinions6_invoker = createInvoker(
+  private[this] lazy val controllers_OpinionController_opinions7_invoker = createInvoker(
     OpinionController_3.opinions,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -231,11 +261,11 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_OpinionController_addOpinion7_route = Route("POST",
+  // @LINE:18
+  private[this] lazy val controllers_OpinionController_addOpinion8_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("opinions/addopinion")))
   )
-  private[this] lazy val controllers_OpinionController_addOpinion7_invoker = createInvoker(
+  private[this] lazy val controllers_OpinionController_addOpinion8_invoker = createInvoker(
     OpinionController_3.addOpinion,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -250,10 +280,10 @@ class Routes(
   )
 
   // @LINE:19
-  private[this] lazy val controllers_OpinionController_getOpinions8_route = Route("GET",
+  private[this] lazy val controllers_OpinionController_getOpinions9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("opinions/getopinions")))
   )
-  private[this] lazy val controllers_OpinionController_getOpinions8_invoker = createInvoker(
+  private[this] lazy val controllers_OpinionController_getOpinions9_invoker = createInvoker(
     OpinionController_3.getOpinions,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -262,16 +292,34 @@ class Routes(
       Nil,
       "GET",
       this.prefix + """opinions/getopinions""",
-      """here is test page""",
+      """""",
       Seq()
     )
   )
 
-  // @LINE:22
-  private[this] lazy val controllers_ProductTypeController_types9_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_OpinionController_delOpinion10_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("opinions/delopinion")))
+  )
+  private[this] lazy val controllers_OpinionController_delOpinion10_invoker = createInvoker(
+    OpinionController_3.delOpinion,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.OpinionController",
+      "delOpinion",
+      Nil,
+      "DELETE",
+      this.prefix + """opinions/delopinion""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:23
+  private[this] lazy val controllers_ProductTypeController_types11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("types")))
   )
-  private[this] lazy val controllers_ProductTypeController_types9_invoker = createInvoker(
+  private[this] lazy val controllers_ProductTypeController_types11_invoker = createInvoker(
     ProductTypeController_0.types,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -285,11 +333,11 @@ class Routes(
     )
   )
 
-  // @LINE:23
-  private[this] lazy val controllers_ProductTypeController_addProductType10_route = Route("POST",
+  // @LINE:24
+  private[this] lazy val controllers_ProductTypeController_addProductType12_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("types/addtype")))
   )
-  private[this] lazy val controllers_ProductTypeController_addProductType10_invoker = createInvoker(
+  private[this] lazy val controllers_ProductTypeController_addProductType12_invoker = createInvoker(
     ProductTypeController_0.addProductType,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -303,11 +351,11 @@ class Routes(
     )
   )
 
-  // @LINE:24
-  private[this] lazy val controllers_ProductTypeController_getProductTypes11_route = Route("GET",
+  // @LINE:25
+  private[this] lazy val controllers_ProductTypeController_getProductTypes13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("types/gettypes")))
   )
-  private[this] lazy val controllers_ProductTypeController_getProductTypes11_invoker = createInvoker(
+  private[this] lazy val controllers_ProductTypeController_getProductTypes13_invoker = createInvoker(
     ProductTypeController_0.getProductTypes,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -322,10 +370,28 @@ class Routes(
   )
 
   // @LINE:26
-  private[this] lazy val controllers_PayController_pay12_route = Route("GET",
+  private[this] lazy val controllers_ProductTypeController_delProductType14_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("types/deltype")))
+  )
+  private[this] lazy val controllers_ProductTypeController_delProductType14_invoker = createInvoker(
+    ProductTypeController_0.delProductType,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ProductTypeController",
+      "delProductType",
+      Nil,
+      "DELETE",
+      this.prefix + """types/deltype""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:28
+  private[this] lazy val controllers_PayController_pay15_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pays")))
   )
-  private[this] lazy val controllers_PayController_pay12_invoker = createInvoker(
+  private[this] lazy val controllers_PayController_pay15_invoker = createInvoker(
     PayController_7.pay,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -339,11 +405,11 @@ class Routes(
     )
   )
 
-  // @LINE:27
-  private[this] lazy val controllers_PayController_addPay13_route = Route("POST",
+  // @LINE:29
+  private[this] lazy val controllers_PayController_addPay16_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pays/addpay")))
   )
-  private[this] lazy val controllers_PayController_addPay13_invoker = createInvoker(
+  private[this] lazy val controllers_PayController_addPay16_invoker = createInvoker(
     PayController_7.addPay,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -357,11 +423,11 @@ class Routes(
     )
   )
 
-  // @LINE:28
-  private[this] lazy val controllers_PayController_getPays14_route = Route("GET",
+  // @LINE:30
+  private[this] lazy val controllers_PayController_getPays17_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pays/getpays")))
   )
-  private[this] lazy val controllers_PayController_getPays14_invoker = createInvoker(
+  private[this] lazy val controllers_PayController_getPays17_invoker = createInvoker(
     PayController_7.getPays,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -375,11 +441,47 @@ class Routes(
     )
   )
 
-  // @LINE:30
-  private[this] lazy val controllers_BasketController_baskets15_route = Route("GET",
+  // @LINE:31
+  private[this] lazy val controllers_PayController_get18_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pays/get/"), DynamicPart("basket_id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_PayController_get18_invoker = createInvoker(
+    PayController_7.get(fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.PayController",
+      "get",
+      Seq(classOf[String]),
+      "GET",
+      this.prefix + """pays/get/""" + "$" + """basket_id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:32
+  private[this] lazy val controllers_PayController_delPay19_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pays/delpay")))
+  )
+  private[this] lazy val controllers_PayController_delPay19_invoker = createInvoker(
+    PayController_7.delPay,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.PayController",
+      "delPay",
+      Nil,
+      "DELETE",
+      this.prefix + """pays/delpay""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:34
+  private[this] lazy val controllers_BasketController_baskets20_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("baskets")))
   )
-  private[this] lazy val controllers_BasketController_baskets15_invoker = createInvoker(
+  private[this] lazy val controllers_BasketController_baskets20_invoker = createInvoker(
     BasketController_6.baskets,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -393,11 +495,11 @@ class Routes(
     )
   )
 
-  // @LINE:31
-  private[this] lazy val controllers_BasketController_addBasket16_route = Route("POST",
+  // @LINE:35
+  private[this] lazy val controllers_BasketController_addBasket21_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("baskets/addbasket")))
   )
-  private[this] lazy val controllers_BasketController_addBasket16_invoker = createInvoker(
+  private[this] lazy val controllers_BasketController_addBasket21_invoker = createInvoker(
     BasketController_6.addBasket,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -411,11 +513,11 @@ class Routes(
     )
   )
 
-  // @LINE:32
-  private[this] lazy val controllers_BasketController_getBaskets17_route = Route("GET",
+  // @LINE:36
+  private[this] lazy val controllers_BasketController_getBaskets22_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("baskets/getbaskets")))
   )
-  private[this] lazy val controllers_BasketController_getBaskets17_invoker = createInvoker(
+  private[this] lazy val controllers_BasketController_getBaskets22_invoker = createInvoker(
     BasketController_6.getBaskets,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -429,11 +531,47 @@ class Routes(
     )
   )
 
-  // @LINE:34
-  private[this] lazy val controllers_KeyWordController_keyWords18_route = Route("GET",
+  // @LINE:37
+  private[this] lazy val controllers_BasketController_get23_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("baskets/get/"), DynamicPart("user_id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_BasketController_get23_invoker = createInvoker(
+    BasketController_6.get(fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.BasketController",
+      "get",
+      Seq(classOf[String]),
+      "GET",
+      this.prefix + """baskets/get/""" + "$" + """user_id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:38
+  private[this] lazy val controllers_BasketController_delBasket24_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("baskets/deletebasket")))
+  )
+  private[this] lazy val controllers_BasketController_delBasket24_invoker = createInvoker(
+    BasketController_6.delBasket,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.BasketController",
+      "delBasket",
+      Nil,
+      "DELETE",
+      this.prefix + """baskets/deletebasket""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:41
+  private[this] lazy val controllers_KeyWordController_keyWords25_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("keyWords")))
   )
-  private[this] lazy val controllers_KeyWordController_keyWords18_invoker = createInvoker(
+  private[this] lazy val controllers_KeyWordController_keyWords25_invoker = createInvoker(
     KeyWordController_5.keyWords,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -447,11 +585,11 @@ class Routes(
     )
   )
 
-  // @LINE:35
-  private[this] lazy val controllers_KeyWordController_addKeyWord19_route = Route("POST",
+  // @LINE:42
+  private[this] lazy val controllers_KeyWordController_addKeyWord26_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("keyWords/addkeyword")))
   )
-  private[this] lazy val controllers_KeyWordController_addKeyWord19_invoker = createInvoker(
+  private[this] lazy val controllers_KeyWordController_addKeyWord26_invoker = createInvoker(
     KeyWordController_5.addKeyWord,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -465,11 +603,11 @@ class Routes(
     )
   )
 
-  // @LINE:36
-  private[this] lazy val controllers_KeyWordController_getKeyWords20_route = Route("GET",
+  // @LINE:43
+  private[this] lazy val controllers_KeyWordController_getKeyWords27_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("keyWords/getkeywords")))
   )
-  private[this] lazy val controllers_KeyWordController_getKeyWords20_invoker = createInvoker(
+  private[this] lazy val controllers_KeyWordController_getKeyWords27_invoker = createInvoker(
     KeyWordController_5.getKeyWords,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -483,11 +621,29 @@ class Routes(
     )
   )
 
-  // @LINE:38
-  private[this] lazy val controllers_OrderController_order21_route = Route("GET",
+  // @LINE:44
+  private[this] lazy val controllers_KeyWordController_delKeyword28_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("keyWords/delkeyword")))
+  )
+  private[this] lazy val controllers_KeyWordController_delKeyword28_invoker = createInvoker(
+    KeyWordController_5.delKeyword,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.KeyWordController",
+      "delKeyword",
+      Nil,
+      "DELETE",
+      this.prefix + """keyWords/delkeyword""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:46
+  private[this] lazy val controllers_OrderController_order29_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders")))
   )
-  private[this] lazy val controllers_OrderController_order21_invoker = createInvoker(
+  private[this] lazy val controllers_OrderController_order29_invoker = createInvoker(
     OrderController_9.order,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -501,11 +657,11 @@ class Routes(
     )
   )
 
-  // @LINE:39
-  private[this] lazy val controllers_OrderController_addOrder22_route = Route("POST",
+  // @LINE:47
+  private[this] lazy val controllers_OrderController_addOrder30_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders/addorder")))
   )
-  private[this] lazy val controllers_OrderController_addOrder22_invoker = createInvoker(
+  private[this] lazy val controllers_OrderController_addOrder30_invoker = createInvoker(
     OrderController_9.addOrder,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -519,11 +675,11 @@ class Routes(
     )
   )
 
-  // @LINE:40
-  private[this] lazy val controllers_OrderController_getOrders23_route = Route("GET",
+  // @LINE:48
+  private[this] lazy val controllers_OrderController_getOrders31_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders/getorders")))
   )
-  private[this] lazy val controllers_OrderController_getOrders23_invoker = createInvoker(
+  private[this] lazy val controllers_OrderController_getOrders31_invoker = createInvoker(
     OrderController_9.getOrders,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -537,11 +693,47 @@ class Routes(
     )
   )
 
-  // @LINE:42
-  private[this] lazy val controllers_BasketProductController_basketProducts24_route = Route("GET",
+  // @LINE:49
+  private[this] lazy val controllers_OrderController_get32_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders/getorders/"), DynamicPart("basket_id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_OrderController_get32_invoker = createInvoker(
+    OrderController_9.get(fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.OrderController",
+      "get",
+      Seq(classOf[String]),
+      "GET",
+      this.prefix + """orders/getorders/""" + "$" + """basket_id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:51
+  private[this] lazy val controllers_OrderController_delOrder33_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders/delorder")))
+  )
+  private[this] lazy val controllers_OrderController_delOrder33_invoker = createInvoker(
+    OrderController_9.delOrder,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.OrderController",
+      "delOrder",
+      Nil,
+      "DELETE",
+      this.prefix + """orders/delorder""",
+      """TODO""",
+      Seq()
+    )
+  )
+
+  // @LINE:53
+  private[this] lazy val controllers_BasketProductController_basketProducts34_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("basketproducts")))
   )
-  private[this] lazy val controllers_BasketProductController_basketProducts24_invoker = createInvoker(
+  private[this] lazy val controllers_BasketProductController_basketProducts34_invoker = createInvoker(
     BasketProductController_2.basketProducts,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -555,11 +747,11 @@ class Routes(
     )
   )
 
-  // @LINE:43
-  private[this] lazy val controllers_BasketProductController_addBasketProduct25_route = Route("POST",
+  // @LINE:54
+  private[this] lazy val controllers_BasketProductController_addBasketProduct35_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("basketproducts/addbaskprod")))
   )
-  private[this] lazy val controllers_BasketProductController_addBasketProduct25_invoker = createInvoker(
+  private[this] lazy val controllers_BasketProductController_addBasketProduct35_invoker = createInvoker(
     BasketProductController_2.addBasketProduct,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -573,11 +765,11 @@ class Routes(
     )
   )
 
-  // @LINE:44
-  private[this] lazy val controllers_BasketProductController_getBasketProducts26_route = Route("GET",
+  // @LINE:55
+  private[this] lazy val controllers_BasketProductController_getBasketProducts36_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("basketproducts/getbaskprods")))
   )
-  private[this] lazy val controllers_BasketProductController_getBasketProducts26_invoker = createInvoker(
+  private[this] lazy val controllers_BasketProductController_getBasketProducts36_invoker = createInvoker(
     BasketProductController_2.getBasketProducts,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -591,11 +783,47 @@ class Routes(
     )
   )
 
-  // @LINE:48
-  private[this] lazy val controllers_Assets_versioned27_route = Route("GET",
+  // @LINE:56
+  private[this] lazy val controllers_BasketProductController_get37_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("basketproducts/getbyid/"), DynamicPart("basket_id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_BasketProductController_get37_invoker = createInvoker(
+    BasketProductController_2.get(fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.BasketProductController",
+      "get",
+      Seq(classOf[String]),
+      "GET",
+      this.prefix + """basketproducts/getbyid/""" + "$" + """basket_id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:57
+  private[this] lazy val controllers_BasketProductController_del38_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("basketproducts/delbasketprod/"), DynamicPart("prod_id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_BasketProductController_del38_invoker = createInvoker(
+    BasketProductController_2.del(fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.BasketProductController",
+      "del",
+      Seq(classOf[String]),
+      "DELETE",
+      this.prefix + """basketproducts/delbasketprod/""" + "$" + """prod_id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:60
+  private[this] lazy val controllers_Assets_versioned39_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned27_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned39_invoker = createInvoker(
     Assets_8.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -648,136 +876,208 @@ class Routes(
         controllers_ProductController_getProducts5_invoker.call(ProductController_4.getProducts)
       }
   
-    // @LINE:16
-    case controllers_OpinionController_opinions6_route(params@_) =>
+    // @LINE:14
+    case controllers_ProductController_delProduct6_route(params@_) =>
       call { 
-        controllers_OpinionController_opinions6_invoker.call(OpinionController_3.opinions)
+        controllers_ProductController_delProduct6_invoker.call(ProductController_4.delProduct)
       }
   
     // @LINE:17
-    case controllers_OpinionController_addOpinion7_route(params@_) =>
+    case controllers_OpinionController_opinions7_route(params@_) =>
       call { 
-        controllers_OpinionController_addOpinion7_invoker.call(OpinionController_3.addOpinion)
+        controllers_OpinionController_opinions7_invoker.call(OpinionController_3.opinions)
+      }
+  
+    // @LINE:18
+    case controllers_OpinionController_addOpinion8_route(params@_) =>
+      call { 
+        controllers_OpinionController_addOpinion8_invoker.call(OpinionController_3.addOpinion)
       }
   
     // @LINE:19
-    case controllers_OpinionController_getOpinions8_route(params@_) =>
+    case controllers_OpinionController_getOpinions9_route(params@_) =>
       call { 
-        controllers_OpinionController_getOpinions8_invoker.call(OpinionController_3.getOpinions)
+        controllers_OpinionController_getOpinions9_invoker.call(OpinionController_3.getOpinions)
       }
   
-    // @LINE:22
-    case controllers_ProductTypeController_types9_route(params@_) =>
+    // @LINE:20
+    case controllers_OpinionController_delOpinion10_route(params@_) =>
       call { 
-        controllers_ProductTypeController_types9_invoker.call(ProductTypeController_0.types)
+        controllers_OpinionController_delOpinion10_invoker.call(OpinionController_3.delOpinion)
       }
   
     // @LINE:23
-    case controllers_ProductTypeController_addProductType10_route(params@_) =>
+    case controllers_ProductTypeController_types11_route(params@_) =>
       call { 
-        controllers_ProductTypeController_addProductType10_invoker.call(ProductTypeController_0.addProductType)
+        controllers_ProductTypeController_types11_invoker.call(ProductTypeController_0.types)
       }
   
     // @LINE:24
-    case controllers_ProductTypeController_getProductTypes11_route(params@_) =>
+    case controllers_ProductTypeController_addProductType12_route(params@_) =>
       call { 
-        controllers_ProductTypeController_getProductTypes11_invoker.call(ProductTypeController_0.getProductTypes)
+        controllers_ProductTypeController_addProductType12_invoker.call(ProductTypeController_0.addProductType)
+      }
+  
+    // @LINE:25
+    case controllers_ProductTypeController_getProductTypes13_route(params@_) =>
+      call { 
+        controllers_ProductTypeController_getProductTypes13_invoker.call(ProductTypeController_0.getProductTypes)
       }
   
     // @LINE:26
-    case controllers_PayController_pay12_route(params@_) =>
+    case controllers_ProductTypeController_delProductType14_route(params@_) =>
       call { 
-        controllers_PayController_pay12_invoker.call(PayController_7.pay)
-      }
-  
-    // @LINE:27
-    case controllers_PayController_addPay13_route(params@_) =>
-      call { 
-        controllers_PayController_addPay13_invoker.call(PayController_7.addPay)
+        controllers_ProductTypeController_delProductType14_invoker.call(ProductTypeController_0.delProductType)
       }
   
     // @LINE:28
-    case controllers_PayController_getPays14_route(params@_) =>
+    case controllers_PayController_pay15_route(params@_) =>
       call { 
-        controllers_PayController_getPays14_invoker.call(PayController_7.getPays)
+        controllers_PayController_pay15_invoker.call(PayController_7.pay)
+      }
+  
+    // @LINE:29
+    case controllers_PayController_addPay16_route(params@_) =>
+      call { 
+        controllers_PayController_addPay16_invoker.call(PayController_7.addPay)
       }
   
     // @LINE:30
-    case controllers_BasketController_baskets15_route(params@_) =>
+    case controllers_PayController_getPays17_route(params@_) =>
       call { 
-        controllers_BasketController_baskets15_invoker.call(BasketController_6.baskets)
+        controllers_PayController_getPays17_invoker.call(PayController_7.getPays)
       }
   
     // @LINE:31
-    case controllers_BasketController_addBasket16_route(params@_) =>
-      call { 
-        controllers_BasketController_addBasket16_invoker.call(BasketController_6.addBasket)
+    case controllers_PayController_get18_route(params@_) =>
+      call(params.fromPath[String]("basket_id", None)) { (basket_id) =>
+        controllers_PayController_get18_invoker.call(PayController_7.get(basket_id))
       }
   
     // @LINE:32
-    case controllers_BasketController_getBaskets17_route(params@_) =>
+    case controllers_PayController_delPay19_route(params@_) =>
       call { 
-        controllers_BasketController_getBaskets17_invoker.call(BasketController_6.getBaskets)
+        controllers_PayController_delPay19_invoker.call(PayController_7.delPay)
       }
   
     // @LINE:34
-    case controllers_KeyWordController_keyWords18_route(params@_) =>
+    case controllers_BasketController_baskets20_route(params@_) =>
       call { 
-        controllers_KeyWordController_keyWords18_invoker.call(KeyWordController_5.keyWords)
+        controllers_BasketController_baskets20_invoker.call(BasketController_6.baskets)
       }
   
     // @LINE:35
-    case controllers_KeyWordController_addKeyWord19_route(params@_) =>
+    case controllers_BasketController_addBasket21_route(params@_) =>
       call { 
-        controllers_KeyWordController_addKeyWord19_invoker.call(KeyWordController_5.addKeyWord)
+        controllers_BasketController_addBasket21_invoker.call(BasketController_6.addBasket)
       }
   
     // @LINE:36
-    case controllers_KeyWordController_getKeyWords20_route(params@_) =>
+    case controllers_BasketController_getBaskets22_route(params@_) =>
       call { 
-        controllers_KeyWordController_getKeyWords20_invoker.call(KeyWordController_5.getKeyWords)
+        controllers_BasketController_getBaskets22_invoker.call(BasketController_6.getBaskets)
+      }
+  
+    // @LINE:37
+    case controllers_BasketController_get23_route(params@_) =>
+      call(params.fromPath[String]("user_id", None)) { (user_id) =>
+        controllers_BasketController_get23_invoker.call(BasketController_6.get(user_id))
       }
   
     // @LINE:38
-    case controllers_OrderController_order21_route(params@_) =>
+    case controllers_BasketController_delBasket24_route(params@_) =>
       call { 
-        controllers_OrderController_order21_invoker.call(OrderController_9.order)
+        controllers_BasketController_delBasket24_invoker.call(BasketController_6.delBasket)
       }
   
-    // @LINE:39
-    case controllers_OrderController_addOrder22_route(params@_) =>
+    // @LINE:41
+    case controllers_KeyWordController_keyWords25_route(params@_) =>
       call { 
-        controllers_OrderController_addOrder22_invoker.call(OrderController_9.addOrder)
-      }
-  
-    // @LINE:40
-    case controllers_OrderController_getOrders23_route(params@_) =>
-      call { 
-        controllers_OrderController_getOrders23_invoker.call(OrderController_9.getOrders)
+        controllers_KeyWordController_keyWords25_invoker.call(KeyWordController_5.keyWords)
       }
   
     // @LINE:42
-    case controllers_BasketProductController_basketProducts24_route(params@_) =>
+    case controllers_KeyWordController_addKeyWord26_route(params@_) =>
       call { 
-        controllers_BasketProductController_basketProducts24_invoker.call(BasketProductController_2.basketProducts)
+        controllers_KeyWordController_addKeyWord26_invoker.call(KeyWordController_5.addKeyWord)
       }
   
     // @LINE:43
-    case controllers_BasketProductController_addBasketProduct25_route(params@_) =>
+    case controllers_KeyWordController_getKeyWords27_route(params@_) =>
       call { 
-        controllers_BasketProductController_addBasketProduct25_invoker.call(BasketProductController_2.addBasketProduct)
+        controllers_KeyWordController_getKeyWords27_invoker.call(KeyWordController_5.getKeyWords)
       }
   
     // @LINE:44
-    case controllers_BasketProductController_getBasketProducts26_route(params@_) =>
+    case controllers_KeyWordController_delKeyword28_route(params@_) =>
       call { 
-        controllers_BasketProductController_getBasketProducts26_invoker.call(BasketProductController_2.getBasketProducts)
+        controllers_KeyWordController_delKeyword28_invoker.call(KeyWordController_5.delKeyword)
+      }
+  
+    // @LINE:46
+    case controllers_OrderController_order29_route(params@_) =>
+      call { 
+        controllers_OrderController_order29_invoker.call(OrderController_9.order)
+      }
+  
+    // @LINE:47
+    case controllers_OrderController_addOrder30_route(params@_) =>
+      call { 
+        controllers_OrderController_addOrder30_invoker.call(OrderController_9.addOrder)
       }
   
     // @LINE:48
-    case controllers_Assets_versioned27_route(params@_) =>
+    case controllers_OrderController_getOrders31_route(params@_) =>
+      call { 
+        controllers_OrderController_getOrders31_invoker.call(OrderController_9.getOrders)
+      }
+  
+    // @LINE:49
+    case controllers_OrderController_get32_route(params@_) =>
+      call(params.fromPath[String]("basket_id", None)) { (basket_id) =>
+        controllers_OrderController_get32_invoker.call(OrderController_9.get(basket_id))
+      }
+  
+    // @LINE:51
+    case controllers_OrderController_delOrder33_route(params@_) =>
+      call { 
+        controllers_OrderController_delOrder33_invoker.call(OrderController_9.delOrder)
+      }
+  
+    // @LINE:53
+    case controllers_BasketProductController_basketProducts34_route(params@_) =>
+      call { 
+        controllers_BasketProductController_basketProducts34_invoker.call(BasketProductController_2.basketProducts)
+      }
+  
+    // @LINE:54
+    case controllers_BasketProductController_addBasketProduct35_route(params@_) =>
+      call { 
+        controllers_BasketProductController_addBasketProduct35_invoker.call(BasketProductController_2.addBasketProduct)
+      }
+  
+    // @LINE:55
+    case controllers_BasketProductController_getBasketProducts36_route(params@_) =>
+      call { 
+        controllers_BasketProductController_getBasketProducts36_invoker.call(BasketProductController_2.getBasketProducts)
+      }
+  
+    // @LINE:56
+    case controllers_BasketProductController_get37_route(params@_) =>
+      call(params.fromPath[String]("basket_id", None)) { (basket_id) =>
+        controllers_BasketProductController_get37_invoker.call(BasketProductController_2.get(basket_id))
+      }
+  
+    // @LINE:57
+    case controllers_BasketProductController_del38_route(params@_) =>
+      call(params.fromPath[String]("prod_id", None)) { (prod_id) =>
+        controllers_BasketProductController_del38_invoker.call(BasketProductController_2.del(prod_id))
+      }
+  
+    // @LINE:60
+    case controllers_Assets_versioned39_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned27_invoker.call(Assets_8.versioned(path, file))
+        controllers_Assets_versioned39_invoker.call(Assets_8.versioned(path, file))
       }
   }
 }

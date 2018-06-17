@@ -22,6 +22,12 @@ class KeyWordController @Inject()(keyWordRepository: KeyWordRepository, cc: Mess
     )(CreateKeyWordForm.apply)(CreateKeyWordForm.unapply)
   }
 
+  val delKeyWordForm: Form[DeleteKeyWordForm] = Form {
+    mapping(
+      "id" -> number
+    )(DeleteKeyWordForm.apply)(DeleteKeyWordForm.unapply)
+  }
+
   /**
     * The index action.
     */
@@ -53,6 +59,29 @@ class KeyWordController @Inject()(keyWordRepository: KeyWordRepository, cc: Mess
     )
   }
 
+  def delKeyword = Action.async { implicit request =>
+
+    delKeyWordForm.bindFromRequest.fold(
+
+
+      errorForm => {
+        println(errorForm);
+        Future.successful(
+          Redirect(routes.KeyWordController.keyWords).flashing("success" -> "product.deleted - fucked")
+        )
+      },
+      // There were no errors in the from, so create the person.
+      keyWord => {
+        keyWordRepository.del(keyWord.id).map { _ =>
+          // If successful, we simply redirect to the index page.
+          Redirect(routes.KeyWordController.keyWords).flashing("success" -> "product.deleted")
+        }
+      }
+
+    )
+  }
+
+
   /**
     * A REST endpoint
     */
@@ -63,5 +92,5 @@ class KeyWordController @Inject()(keyWordRepository: KeyWordRepository, cc: Mess
   }
 }
 
-
+case class DeleteKeyWordForm(id: Int)
 case class CreateKeyWordForm(word: String)

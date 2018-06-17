@@ -1,0 +1,29 @@
+@(pay: Form[CreatePayForm], ord: Seq[Order])(implicit request: MessagesRequestHeader)
+
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+   @request.messages(key)
+}
+
+@main("Pays page") {
+  @form(routes.PayController.addPay()) {
+	  <select name="order_id" id="order_id">
+		@for(o <- ord){
+			<option value="@o.id">@o.id</option>
+		}
+	  </select>
+
+
+		@CSRF.formField
+
+		<div class="buttons">
+			<input type="submit" value="Add Pay"/>
+		</div>
+
+	  	<div class="buttons">
+			<a href="@routes.PayController.getPays()" >Get all pays</a>
+		</div>
+	}
+}

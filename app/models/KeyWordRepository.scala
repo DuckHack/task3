@@ -63,4 +63,9 @@ class KeyWordRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(imp
   def list(): Future[Seq[KeyWord]] = db.run {
     keyWord.result
   }
+
+  def del(del_id: Int ) = db.run {
+    println("inside of del method KeyWord")
+    keyWord.filter(_.id === del_id).delete
+  }
 }

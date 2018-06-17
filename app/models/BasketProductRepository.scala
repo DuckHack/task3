@@ -43,6 +43,8 @@ class BasketProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvide
 
 
   private val basketProduct = TableQuery[BasketProductTable]
+  private val basket = TableQuery[BasketTable]
+  private val product = TableQuery[ProductTable]
 
   /**
     * Create a person with the given name and age.
@@ -68,4 +70,18 @@ class BasketProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvide
   def list(): Future[Seq[BasketProduct]] = db.run {
     basketProduct.result
   }
+
+
+  def get(in_basket_id: Int): Future[Seq[JoinedBasketProduct]] = db.run {
+    println("inside of geBasketProduct" + in_basket_id)
+    basket.filter(_.id=== in_basket_id).join(basketProduct).on(_.id === _.basket_id).join(product).on(_._2.product_id === _.id).
+      result.map(s => s.map( a => new JoinedBasketProduct(a._1._1.id, a._1._1.user_id, a._1._2.product_id, a._1._2.id, a._2.name, a._2.description, a._2.price)))
+  }
+
+
+  def del(del_product_id: Int) = db.run {
+    println("inside of del method BasketProduct ->" + del_product_id)
+    basketProduct.filter(_.id === del_product_id).delete
+  }
+
 }

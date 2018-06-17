@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/andreik/studies/2d_Sem/e-buisnes/play-products-crud-slick-master/conf/routes
-// @DATE:Wed May 23 00:37:17 MSK 2018
+// @SOURCE:/home/andreik/studies/2d_Sem/e-buisnes/task3/conf/routes
+// @DATE:Sun Jun 17 17:43:07 MSK 2018
 
 
 package router {

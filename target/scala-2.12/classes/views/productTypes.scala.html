@@ -1,0 +1,23 @@
+@(productType: Form[CreateProductTypeForm])(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+   @request.messages(key)
+}
+
+@main("Products type page") {
+  @form(routes.ProductTypeController.addProductType()) {
+		@inputText(productType("name"))
+
+		@CSRF.formField
+
+		<div class="buttons">
+			<input type="submit" value="Add Type"/>
+		</div>
+
+	  	<div class="buttons">
+			<a href="@routes.ProductTypeController.getProductTypes()" >Get all types</a>
+		</div>
+	}
+}

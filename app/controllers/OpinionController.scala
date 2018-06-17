@@ -26,6 +26,13 @@ class OpinionController @Inject()(productsRepo: ProductRepository, opinionReposi
   }
 
 
+  val deleteOpinionForm: Form[DeleteOpinionForm] = Form {
+    mapping(
+      "id" -> number
+    )(DeleteOpinionForm.apply)(DeleteOpinionForm.unapply)
+  }
+
+
     def opinions = Action.async { implicit request =>
       val products = productsRepo.list()
       products.map(prod => Ok(views.html.opinions(opinionForm, prod)))
@@ -54,6 +61,30 @@ class OpinionController @Inject()(productsRepo: ProductRepository, opinionReposi
       }
     )
   }
+
+
+  def delOpinion = Action.async { implicit request =>
+
+    deleteOpinionForm.bindFromRequest.fold(
+
+
+      errorForm => {
+        println(errorForm);
+        Future.successful(
+          Redirect(routes.OpinionController.opinions).flashing("success" -> "product.deleted - fucked")
+        )
+      },
+      // There were no errors in the from, so create the person.
+      opinion => {
+        opinionRepository.del(opinion.id).map { _ =>
+          // If successful, we simply redirect to the index page.
+          Redirect(routes.OpinionController.opinions).flashing("success" -> "product.deleted")
+        }
+      }
+
+    )
+  }
+
   /**
     * A REST endpoint that gets all the people as JSON.
     */
@@ -62,7 +93,9 @@ class OpinionController @Inject()(productsRepo: ProductRepository, opinionReposi
       Ok(Json.toJson(opinions))
     }
   }
+
+
 }
 
-
+case class DeleteOpinionForm(id: Int)
 case class CreateOpinionForm(value: String, product_id: Int)

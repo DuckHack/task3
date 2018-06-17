@@ -3,46 +3,58 @@
 # ~~~~
 
 # Home page
-GET     /                               controllers.MainController.index
-GET     /godpage                        controllers.MainController.getGodPage
-POST    /userpage                       controllers.MainController.createUserPage
-#GET     /getuserpage                controllers.MainController.getUserPage
+GET     /                                       controllers.MainController.index
+GET     /godpage                                controllers.MainController.getGodPage
+POST    /userpage                               controllers.MainController.createUserPage
+#GET     /getuserpage                           controllers.MainController.getUserPage
 
-GET     /products                       controllers.ProductController.index
-POST    /products/addproduct            controllers.ProductController.addProduct
-GET     /products/getproducts           controllers.ProductController.getProducts
-
-
-GET     /opinions                       controllers.OpinionController.opinions
-POST    /opinions/addopinion            controllers.OpinionController.addOpinion
-#here is test page
-GET     /opinions/getopinions           controllers.OpinionController.getOpinions
+GET     /products                               controllers.ProductController.index
+POST    /products/addproduct                    controllers.ProductController.addProduct
+GET     /products/getproducts                   controllers.ProductController.getProducts
+DELETE  /products/delproduct                    controllers.ProductController.delProduct
 
 
-GET     /types                          controllers.ProductTypeController.types
-POST    /types/addtype                  controllers.ProductTypeController.addProductType
-GET     /types/gettypes                 controllers.ProductTypeController.getProductTypes
+GET     /opinions                               controllers.OpinionController.opinions
+POST    /opinions/addopinion                    controllers.OpinionController.addOpinion
+GET     /opinions/getopinions                   controllers.OpinionController.getOpinions
+DELETE  /opinions/delopinion                    controllers.OpinionController.delOpinion
 
-GET     /pays                           controllers.PayController.pay
-POST    /pays/addpay                    controllers.PayController.addPay
-GET     /pays/getpays                   controllers.PayController.getPays
 
-GET     /baskets                        controllers.BasketController.baskets
-POST    /baskets/addbasket              controllers.BasketController.addBasket
-GET     /baskets/getbaskets             controllers.BasketController.getBaskets
+GET     /types                                  controllers.ProductTypeController.types
+POST    /types/addtype                          controllers.ProductTypeController.addProductType
+GET     /types/gettypes                         controllers.ProductTypeController.getProductTypes
+DELETE  /types/deltype                          controllers.ProductTypeController.delProductType
 
-GET     /keyWords                       controllers.KeyWordController.keyWords
-POST    /keyWords/addkeyword            controllers.KeyWordController.addKeyWord
-GET     /keyWords/getkeywords           controllers.KeyWordController.getKeyWords
+GET     /pays                                   controllers.PayController.pay
+POST    /pays/addpay                            controllers.PayController.addPay
+GET     /pays/getpays                           controllers.PayController.getPays
+GET	    /pays/get/:basket_id		            controllers.PayController.get(basket_id)
+DELETE  /pays/delpay                            controllers.PayController.delPay
 
-GET     /orders                         controllers.OrderController.order
-POST    /orders/addorder                controllers.OrderController.addOrder
-GET     /orders/getorders               controllers.OrderController.getOrders
+GET     /baskets                                controllers.BasketController.baskets
+POST    /baskets/addbasket                      controllers.BasketController.addBasket
+GET     /baskets/getbaskets                     controllers.BasketController.getBaskets
+GET	    /baskets/get/:user_id   		        controllers.BasketController.get(user_id)
+DELETE  /baskets/deletebasket                   controllers.BasketController.delBasket
 
-GET     /basketproducts                 controllers.BasketProductController.basketProducts
-POST    /basketproducts/addbaskprod     controllers.BasketProductController.addBasketProduct
-GET     /basketproducts/getbaskprods    controllers.BasketProductController.getBasketProducts
 
+GET     /keyWords                               controllers.KeyWordController.keyWords
+POST    /keyWords/addkeyword                    controllers.KeyWordController.addKeyWord
+GET     /keyWords/getkeywords                   controllers.KeyWordController.getKeyWords
+DELETE  /keyWords/delkeyword                    controllers.KeyWordController.delKeyword
+
+GET     /orders                                 controllers.OrderController.order
+POST    /orders/addorder                        controllers.OrderController.addOrder
+GET     /orders/getorders                       controllers.OrderController.getOrders
+GET	    /orders/getorders/:basket_id		    controllers.OrderController.get(basket_id)
+#TODO
+DELETE  /orders/delorder                        controllers.OrderController.delOrder
+
+GET     /basketproducts                         controllers.BasketProductController.basketProducts
+POST    /basketproducts/addbaskprod             controllers.BasketProductController.addBasketProduct
+GET     /basketproducts/getbaskprods            controllers.BasketProductController.getBasketProducts
+GET     /basketproducts/getbyid/:basket_id      controllers.BasketProductController.get(basket_id)
+DELETE  /basketproducts/delbasketprod/:prod_id   controllers.BasketProductController.del(prod_id)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

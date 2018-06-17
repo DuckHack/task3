@@ -27,10 +27,21 @@ class ProductController @Inject()(productsRepo: ProductRepository, productTypeRe
     )(CreateProductForm.apply)(CreateProductForm.unapply)
   }
 
+  val deleteProductForm: Form[DeleteProductForm] = Form {
+    mapping(
+      "id" -> number
+    )(DeleteProductForm.apply)(DeleteProductForm.unapply)
+  }
+
 
   def index = Action.async { implicit request =>
     val types = productTypeRepository.list()
-    types.map(typ => Ok(views.html.addProd(productForm, typ)))
+    val products = productsRepo.list()
+    types.flatMap{typ =>
+      products.map{product =>
+        Ok(views.html.addProd(productForm, typ, deleteProductForm, product))
+      }
+    }
   }
 
 
@@ -56,6 +67,29 @@ class ProductController @Inject()(productsRepo: ProductRepository, productTypeRe
     )
   }
 
+
+  def delProduct = Action.async { implicit request =>
+
+    deleteProductForm.bindFromRequest.fold(
+
+
+      errorForm => {
+        println(errorForm);
+        Future.successful(
+          Redirect(routes.ProductController.index).flashing("success" -> "product.deleted - fucked")
+        )
+      },
+      // There were no errors in the from, so create the person.
+      product => {
+        productsRepo.del(product.id).map { _ =>
+          // If successful, we simply redirect to the index page.
+          Redirect(routes.ProductController.index).flashing("success" -> "product.deleted")
+        }
+      }
+
+    )
+  }
+
   /**
    * A REST endpoint
    */
@@ -67,4 +101,5 @@ class ProductController @Inject()(productsRepo: ProductRepository, productTypeRe
 }
 
 
+case class DeleteProductForm(id: Int)
 case class CreateProductForm(name: String, description: String, price: Int, type_id: Int)

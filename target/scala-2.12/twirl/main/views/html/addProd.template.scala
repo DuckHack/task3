@@ -15,10 +15,10 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-object addProd extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template3[Form[CreateProductForm],Seq[ProductType],MessagesRequestHeader,play.twirl.api.HtmlFormat.Appendable] {
+object addProd extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template5[Form[CreateProductForm],Seq[ProductType],Form[DeleteProductForm],Seq[Product],MessagesRequestHeader,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(product: Form[CreateProductForm], prod_type: Seq[ProductType])(implicit request: MessagesRequestHeader):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(product: Form[CreateProductForm], prod_type: Seq[ProductType], delProd: Form[DeleteProductForm], products: Seq[Product])(implicit request: MessagesRequestHeader):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 /*3.2*/import helper._
@@ -27,40 +27,55 @@ object addProd extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Ht
 Seq[Any](format.raw/*2.1*/("""
 """),format.raw/*4.1*/("""
 """),_display_(/*5.2*/request/*5.9*/.flash.get("success").map/*5.34*/ { key =>_display_(Seq[Any](format.raw/*5.43*/("""
-   """),_display_(/*6.5*/request/*6.12*/.messages(key)),format.raw/*6.26*/("""
+    """),_display_(/*6.6*/request/*6.13*/.messages(key)),format.raw/*6.27*/("""
 """)))}),format.raw/*7.2*/("""
 
 """),_display_(/*9.2*/main("Welcome to Ebiznes")/*9.28*/ {_display_(Seq[Any](format.raw/*9.30*/("""
-  """),_display_(/*10.4*/form(routes.ProductController.addProduct())/*10.47*/ {_display_(Seq[Any](format.raw/*10.49*/("""
-		"""),_display_(/*11.4*/inputText(product("name"))),format.raw/*11.30*/("""
-		"""),_display_(/*12.4*/inputText(product("description"))),format.raw/*12.37*/("""
-		"""),_display_(/*13.4*/inputText(product("price"))),format.raw/*13.31*/("""
-	  """),format.raw/*14.4*/("""<select name="type_id" id="type_id">
-		"""),_display_(/*15.4*/for(p_type <- prod_type) yield /*15.28*/{_display_(Seq[Any](format.raw/*15.29*/("""
-			"""),format.raw/*16.4*/("""<option value=""""),_display_(/*16.20*/p_type/*16.26*/.id),format.raw/*16.29*/("""">"""),_display_(/*16.32*/p_type/*16.38*/.name),format.raw/*16.43*/("""</option>
-		""")))}),format.raw/*17.4*/("""
-	  """),format.raw/*18.4*/("""</select>
+    """),_display_(/*10.6*/form(routes.ProductController.addProduct())/*10.49*/ {_display_(Seq[Any](format.raw/*10.51*/("""
+        """),_display_(/*11.10*/inputText(product("name"))),format.raw/*11.36*/("""
+        """),_display_(/*12.10*/inputText(product("description"))),format.raw/*12.43*/("""
+        """),_display_(/*13.10*/inputText(product("price"))),format.raw/*13.37*/("""
+        """),format.raw/*14.9*/("""<select name="type_id" id="type_id">
+        """),_display_(/*15.10*/for(p_type <- prod_type) yield /*15.34*/{_display_(Seq[Any](format.raw/*15.35*/("""
+            """),format.raw/*16.13*/("""<option value=""""),_display_(/*16.29*/p_type/*16.35*/.id),format.raw/*16.38*/("""">"""),_display_(/*16.41*/p_type/*16.47*/.name),format.raw/*16.52*/("""</option>
+        """)))}),format.raw/*17.10*/("""
+        """),format.raw/*18.9*/("""</select>
 
 
-		"""),_display_(/*21.4*/CSRF/*21.8*/.formField),format.raw/*21.18*/("""
+        """),_display_(/*21.10*/CSRF/*21.14*/.formField),format.raw/*21.24*/("""
 
-		"""),format.raw/*23.3*/("""<div class="buttons">
-			<input type="submit" value="Add Product"/>
-		</div>
+        """),format.raw/*23.9*/("""<div class="buttons">
+            <input type="submit" value="Add Product"/>
+        </div>
+    """)))}),format.raw/*26.6*/("""
 
-	  	<div class="buttons">
-			<a href=""""),_display_(/*28.14*/routes/*28.20*/.ProductController.getProducts()),format.raw/*28.52*/("""" >Get all products</a>
-		</div>
-	""")))}),format.raw/*30.3*/("""
-""")))}),format.raw/*31.2*/("""
+    """),format.raw/*28.5*/("""<div class="buttons">
+        <a href=""""),_display_(/*29.19*/routes/*29.25*/.ProductController.getProducts()),format.raw/*29.57*/("""" >Get all products</a>
+    </div>
+
+    """),_display_(/*32.6*/form(routes.ProductController.delProduct())/*32.49*/ {_display_(Seq[Any](format.raw/*32.51*/("""
+        """),format.raw/*33.9*/("""<select name="id" id="id">
+        """),_display_(/*34.10*/for(p <- products) yield /*34.28*/{_display_(Seq[Any](format.raw/*34.29*/("""
+            """),format.raw/*35.13*/("""<option value=""""),_display_(/*35.29*/p/*35.30*/.id),format.raw/*35.33*/("""">"""),_display_(/*35.36*/p/*35.37*/.name),format.raw/*35.42*/("""</option>
+        """)))}),format.raw/*36.10*/("""
+        """),format.raw/*37.9*/("""</select>
+
+
+        """),_display_(/*40.10*/CSRF/*40.14*/.formField),format.raw/*40.24*/("""
+
+        """),format.raw/*42.9*/("""<div class="buttons">
+            <input type="submit" value="Delete Product"/>
+        </div>
+    """)))}),format.raw/*45.6*/("""
+""")))}),format.raw/*46.2*/("""
 """))
       }
     }
   }
 
-  def render(product:Form[CreateProductForm],prod_type:Seq[ProductType],request:MessagesRequestHeader): play.twirl.api.HtmlFormat.Appendable = apply(product,prod_type)(request)
+  def render(product:Form[CreateProductForm],prod_type:Seq[ProductType],delProd:Form[DeleteProductForm],products:Seq[Product],request:MessagesRequestHeader): play.twirl.api.HtmlFormat.Appendable = apply(product,prod_type,delProd,products)(request)
 
-  def f:((Form[CreateProductForm],Seq[ProductType]) => (MessagesRequestHeader) => play.twirl.api.HtmlFormat.Appendable) = (product,prod_type) => (request) => apply(product,prod_type)(request)
+  def f:((Form[CreateProductForm],Seq[ProductType],Form[DeleteProductForm],Seq[Product]) => (MessagesRequestHeader) => play.twirl.api.HtmlFormat.Appendable) = (product,prod_type,delProd,products) => (request) => apply(product,prod_type,delProd,products)(request)
 
   def ref: this.type = this
 
@@ -69,11 +84,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun May 20 17:09:12 MSK 2018
-                  SOURCE: /home/andreik/studies/2d_Sem/e-buisnes/play-products-crud-slick-master/app/views/addProd.scala.html
-                  HASH: b2d2d8ebaa6efeb0c68b2e6904208845ec27d327
-                  MATRIX: 787->1|964->108|1008->106|1035->124|1062->126|1076->133|1109->158|1155->167|1185->172|1200->179|1234->193|1265->195|1293->198|1327->224|1366->226|1396->230|1448->273|1488->275|1518->279|1565->305|1595->309|1649->342|1679->346|1727->373|1758->377|1824->417|1864->441|1903->442|1934->446|1977->462|1992->468|2016->471|2046->474|2061->480|2087->485|2130->498|2161->502|2202->517|2214->521|2245->531|2276->535|2420->652|2435->658|2488->690|2553->725|2585->727
-                  LINES: 21->1|24->3|27->2|28->4|29->5|29->5|29->5|29->5|30->6|30->6|30->6|31->7|33->9|33->9|33->9|34->10|34->10|34->10|35->11|35->11|36->12|36->12|37->13|37->13|38->14|39->15|39->15|39->15|40->16|40->16|40->16|40->16|40->16|40->16|40->16|41->17|42->18|45->21|45->21|45->21|47->23|52->28|52->28|52->28|54->30|55->31
+                  DATE: Sat Jun 09 19:37:55 MSK 2018
+                  SOURCE: /home/andreik/studies/2d_Sem/e-buisnes/task3/app/views/addProd.scala.html
+                  HASH: 9c75c564ea46a895c68fcb84de9e7c3df0b35209
+                  MATRIX: 824->1|1059->166|1103->164|1130->182|1157->184|1171->191|1204->216|1250->225|1281->231|1296->238|1330->252|1361->254|1389->257|1423->283|1462->285|1494->291|1546->334|1586->336|1623->346|1670->372|1707->382|1761->415|1798->425|1846->452|1882->461|1955->507|1995->531|2034->532|2075->545|2118->561|2133->567|2157->570|2187->573|2202->579|2228->584|2278->603|2314->612|2362->633|2375->637|2406->647|2443->657|2570->754|2603->760|2670->800|2685->806|2738->838|2805->879|2857->922|2897->924|2933->933|2996->969|3030->987|3069->988|3110->1001|3153->1017|3163->1018|3187->1021|3217->1024|3227->1025|3253->1030|3303->1049|3339->1058|3387->1079|3400->1083|3431->1093|3468->1103|3598->1203|3630->1205
+                  LINES: 21->1|24->3|27->2|28->4|29->5|29->5|29->5|29->5|30->6|30->6|30->6|31->7|33->9|33->9|33->9|34->10|34->10|34->10|35->11|35->11|36->12|36->12|37->13|37->13|38->14|39->15|39->15|39->15|40->16|40->16|40->16|40->16|40->16|40->16|40->16|41->17|42->18|45->21|45->21|45->21|47->23|50->26|52->28|53->29|53->29|53->29|56->32|56->32|56->32|57->33|58->34|58->34|58->34|59->35|59->35|59->35|59->35|59->35|59->35|59->35|60->36|61->37|64->40|64->40|64->40|66->42|69->45|70->46
                   -- GENERATED --
               */
           

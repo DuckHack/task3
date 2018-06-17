@@ -1,0 +1,35 @@
+@(basketProduct: Form[CreateBasketProductForm], baskets: Seq[Basket], products: Seq[Product])(implicit request: MessagesRequestHeader)
+
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+   @request.messages(key)
+}
+
+@main("Basket products page") {
+  @form(routes.BasketProductController.addBasketProduct()) {
+	  <h3>Select the user id</h3>
+	  <select name="basket_id" id="basket_id">
+		@for(b <- baskets){
+			<option value="@b.id">@b.user_id</option>
+		}
+	  </select>
+	  <h3>Select the product</h3>
+	  <select name="product_id" id="product_id">
+		  @for(p <- products){
+			  <option value="@p.id">@p.name</option>
+		  }
+	  </select>
+
+		@CSRF.formField
+
+		<div class="buttons">
+			<input type="submit" value="Add product to basket"/>
+		</div>
+
+	  	<div class="buttons">
+			<a href="@routes.BasketProductController.getBasketProducts()" >Get all basket products</a>
+		</div>
+	}
+}

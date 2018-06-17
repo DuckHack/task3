@@ -1,0 +1,22 @@
+@(user_id : Int)(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+    @request.messages(key)
+}
+
+@main("Welcome to Ebiznes") {
+    <H2>Welcome to the user page</H2>
+    <p>Your'r user id is - @user_id</p>
+
+    <div class="buttons">
+        <a href="@routes.OrderController.order()" >Create Order</a>
+    </div>
+    <div class="buttons">
+        <a href="@routes.PayController.pay()" >Create Pay</a>
+    </div>
+    <div class="buttons">
+        <a href="@routes.BasketProductController.basketProducts()" >Create basket product</a>
+    </div>
+}

@@ -13,7 +13,8 @@ import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
 
 class BasketProductController @Inject()(productRepository: ProductRepository,
-                                        basketRepository: BasketRepository, basketProductRepository: BasketProductRepository, cc: MessagesControllerComponents)(implicit ec: ExecutionContext)
+                                        basketRepository: BasketRepository, basketProductRepository: BasketProductRepository,
+                                        cc: MessagesControllerComponents)(implicit ec: ExecutionContext)
   extends MessagesAbstractController(cc) {
 
 
@@ -24,7 +25,7 @@ class BasketProductController @Inject()(productRepository: ProductRepository,
     )(CreateBasketProductForm.apply)(CreateBasketProductForm.unapply)
   }
 
-    def basketProducts = Action.async { implicit request =>
+  def basketProducts = Action.async { implicit request =>
     val products = productRepository.list()
     val baskets = basketRepository.list()
     baskets.flatMap { basket =>
@@ -62,6 +63,20 @@ class BasketProductController @Inject()(productRepository: ProductRepository,
   def getBasketProducts = Action.async { implicit request =>
     basketProductRepository.list().map { basketProduct =>
       Ok(Json.toJson(basketProduct))
+    }
+  }
+
+
+  def get(basket_id: String) = Action.async { implicit request =>
+    basketProductRepository.get(basket_id.toInt).map{ basketJoin =>
+      println(basketJoin + " basketJoin")
+      Ok(Json.toJson(basketJoin))
+    }
+  }
+
+  def del(prod_id: String) = Action.async { implicit request =>
+    basketProductRepository.del(prod_id.toInt).map { _ =>
+      Redirect(routes.BasketProductController.basketProducts).flashing("success" -> "product.deleted")
     }
   }
 }

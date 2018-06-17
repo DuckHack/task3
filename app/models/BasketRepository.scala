@@ -41,8 +41,6 @@ class BasketRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impl
     */
 
   val basket = TableQuery[BasketTable]
-//  val order = TableQuery[OrderTable]
-//  val basketProduct = TableQuery[BasketProductTable]
   /**
     * Create a person with the given name and age.
     *
@@ -67,14 +65,14 @@ class BasketRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impl
     basket.result
   }
 
-/*
 
-  def myList(): Future[Seq[Basket]] = db.run {
-    //basket.filter(_.user_id === user_id)
-    basket.filter(_.user_id === 1).result
-    //    basket.filter { basketTable: BasketTable =>
-    //      basketTable.user_id === user_id
-    //    }
+  def del(del_id: Int ) = db.run {
+    println("inside of del method Basket")
+    basket.filter(_.id === del_id).delete
   }
-*/
+
+  def get(user_id: Int): Future[Seq[Basket]] = db.run {
+    println("inside of getBasket by id " + user_id)
+    basket.filter(_.user_id === user_id).result
+  }
 }

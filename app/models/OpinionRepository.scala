@@ -82,4 +82,10 @@ class OpinionRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, pro
   def list(): Future[Seq[Opinion]] = db.run {
     opinion.result
   }
+
+
+  def del(opinion_id: Int ) = db.run {
+    println("inside of del method")
+    opinion.filter(_.id === opinion_id).delete
+  }
 }

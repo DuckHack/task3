@@ -56,4 +56,10 @@ class ProductTypeRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(
   def list(): Future[Seq[ProductType]] = db.run {
     product_type.result
   }
+
+  def del(del_id: Int ) = db.run {
+    println("inside of del method ProductType")
+    product_type.filter(_.id === del_id).delete
+  }
+
 }

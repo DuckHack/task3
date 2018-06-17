@@ -1,0 +1,23 @@
+@(keyWord: Form[CreateKeyWordForm])(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+   @request.messages(key)
+}
+
+@main("KeyWords page") {
+  @form(routes.KeyWordController.addKeyWord()) {
+		@inputText(keyWord("word"))
+
+		@CSRF.formField
+
+		<div class="buttons">
+			<input type="submit" value="Add Key Word"/>
+		</div>
+
+	  	<div class="buttons">
+			<a href="@routes.KeyWordController.getKeyWords()" >Get all key words</a>
+		</div>
+	}
+}

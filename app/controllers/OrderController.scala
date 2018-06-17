@@ -22,6 +22,12 @@ class OrderController @Inject()(orderRepository: OrderRepository, basketReposito
     )(CreateOrderForm.apply)(CreateOrderForm.unapply)
   }
 
+  val delOrderForm: Form[DelOrderForm] = Form{
+    mapping(
+          "id" -> number
+    )(DelOrderForm.apply)(DelOrderForm.unapply)
+  }
+
 
   def order = Action.async { implicit request =>
     val baskets = basketRepository.list()
@@ -50,37 +56,46 @@ class OrderController @Inject()(orderRepository: OrderRepository, basketReposito
       }
     )
   }
-  //  def create(value: String, product_id: Int): Future[Opinion]
-//    * A REST endpoint that gets all the people as JSON.
-/*
-  def myOrders = Action.async { implicit request =>
-    val request_obj = userForm.bindFromRequest.get
-    println(request_obj.user_id + "myOrders")
 
-//    var myBasket: play.api.libs.json.JsValue =
-//    basketRepository.myList().map { baskets =>
-//      Json.toJson(baskets)
-//      //Ok(Json.toJson(baskets))
-//    }
-    getResult()
-    //    val order = orders.filter(_.basket_id == request_obj.user_id)
-//    println(order)
+
+  def delOrder = Action.async { implicit request =>
+
+    delOrderForm.bindFromRequest.fold(
+
+
+      errorForm => {
+        println(errorForm);
+        Future.successful(
+          Redirect(routes.OrderController.order).flashing("success" -> "order.deleted - collapse")
+        )
+      },
+      // There were no errors in the from, so create the person.
+      order => {
+        basketRepository.del(order.id).map { _ =>
+          // If successful, we simply redirect to the index page.
+          Redirect(routes.OrderController.order).flashing("success" -> "order.deleted")
+        }
+      }
+
+    )
   }
 
-  def getResult = Action.async{
-    basketRepository.myList().map { baskets =>
-      //println(Json.toJson(baskets))
-      Ok(Json.toJson(baskets))
-    }
-  }
-*/
+
 
   def getOrders = Action.async { implicit request =>
     orderRepository.list().map { orders =>
       Ok(Json.toJson(orders))
     }
   }
+
+
+  def get(basket_id: String) = Action.async { implicit request =>
+    orderRepository.get(basket_id.toInt).map{ orderJoin =>
+      Ok(Json.toJson(orderJoin))
+    }
+  }
+
 }
 
-
+case class DelOrderForm(id: Int)
 case class CreateOrderForm(basket_id: Int, total: Int)

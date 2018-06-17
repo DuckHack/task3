@@ -1,7 +1,7 @@
 package controllers
 
 import javax.inject._
-import models._
+import models.{JoinedPay, _}
 import play.api.data.Form
 import play.api.data.Forms._
 import play.api.data.validation.Constraints._
@@ -24,6 +24,13 @@ class PayController @Inject()(payRepository: PayRepository, orderRepository: Ord
     mapping(
       "order_id" -> number
     )(CreatePayForm.apply)(CreatePayForm.unapply)
+  }
+
+
+  val delPayForm: Form[DelPayForm] = Form{
+    mapping(
+      "id" -> number
+    )(DelPayForm.apply)(DelPayForm.unapply)
   }
 
 
@@ -54,6 +61,30 @@ class PayController @Inject()(payRepository: PayRepository, orderRepository: Ord
       }
     )
   }
+
+
+  def delPay = Action.async { implicit request =>
+
+    delPayForm.bindFromRequest.fold(
+
+
+      errorForm => {
+        println(errorForm);
+        Future.successful(
+          Redirect(routes.PayController.pay).flashing("success" -> "pay.deleted - collapse")
+        )
+      },
+      // There were no errors in the from, so create the person.
+      pay => {
+        payRepository.del(pay.id).map { _ =>
+          // If successful, we simply redirect to the index page.
+          Redirect(routes.PayController.pay).flashing("success" -> "pay.deleted")
+        }
+      }
+
+    )
+  }
+
   /**
     * A REST endpoint
     */
@@ -62,7 +93,13 @@ class PayController @Inject()(payRepository: PayRepository, orderRepository: Ord
       Ok(Json.toJson(pays))
     }
   }
+
+  def get(basket_id: String) = Action.async { implicit request =>
+    payRepository.get(basket_id.toInt).map{ payJoin =>
+      Ok(Json.toJson(payJoin))
+    }
+  }
 }
 
-
+case class DelPayForm(id: Int)
 case class CreatePayForm(order_id: Int)

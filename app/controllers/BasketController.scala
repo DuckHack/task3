@@ -24,6 +24,12 @@ class BasketController @Inject()(basketRepository: BasketRepository,
     )(CreateBasketForm.apply)(CreateBasketForm.unapply)
   }
 
+  val deleteForm: Form[DeleteBasketForm] = Form {
+    mapping(
+      "id" -> number
+    )(DeleteBasketForm.apply)(DeleteBasketForm.unapply)
+  }
+
   /**
     * The index action.
     */
@@ -56,6 +62,29 @@ class BasketController @Inject()(basketRepository: BasketRepository,
     )
   }
 
+  def delBasket = Action.async { implicit request =>
+
+    deleteForm.bindFromRequest.fold(
+
+
+      errorForm => {
+        println(errorForm);
+        Future.successful(
+          Redirect(routes.BasketController.baskets).flashing("success" -> "product.deleted - fucked")
+        )
+      },
+      // There were no errors in the from, so create the person.
+      basket => {
+        basketRepository.del(basket.user_id).map { _ =>
+          // If successful, we simply redirect to the index page.
+          Redirect(routes.BasketController.baskets).flashing("success" -> "product.deleted")
+        }
+      }
+
+    )
+  }
+
+
   /**
     * A REST endpoint
     */
@@ -64,7 +93,17 @@ class BasketController @Inject()(basketRepository: BasketRepository,
       Ok(Json.toJson(baskets))
     }
   }
+
+  def get(user_id: String) = Action.async { implicit request =>
+
+    basketRepository.get(user_id.toInt).map{ basket =>
+      println(basket)
+      Ok(Json.toJson(basket))
+    }
+  }
+
+
 }
 
-
+case class DeleteBasketForm(user_id: Int)
 case class CreateBasketForm(user_id: Int)

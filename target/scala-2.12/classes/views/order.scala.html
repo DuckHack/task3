@@ -1,0 +1,27 @@
+@(order: Form[CreateOrderForm], baskets: Seq[Basket])(implicit request: MessagesRequestHeader)
+
+@import helper._
+
+@request.flash.get("success").map { key =>
+   @request.messages(key)
+}
+
+@main("Orders page") {
+  @form(routes.OrderController.addOrder()) {
+	  @inputText(order("total"))
+	  <select name="basket_id" id="basket_id">
+	  @for(basket <- baskets){
+		  <option value="@basket.id">@basket.user_id</option>
+	  }
+	  </select>
+		@CSRF.formField
+
+		<div class="buttons">
+			<input type="submit" value="Add order"/>
+		</div>
+	}
+	<div class="buttons">
+		<a href="@routes.OrderController.getOrders()" >Get all orders</a>
+	</div>
+
+}
