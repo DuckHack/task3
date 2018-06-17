@@ -1,31 +1,10 @@
-@(product: Form[CreateProductForm], prod_type: Seq[ProductType])(implicit request: MessagesRequestHeader)
-
-@import helper._
-
-@request.flash.get("success").map { key =>
-   @request.messages(key)
-}
-
-@main("Welcome to Ebiznes") {
-  @form(routes.ProductController.addProduct()) {
-		@inputText(product("name"))
-		@inputText(product("description"))
-		@inputText(product("price"))
-	  <select name="type_id" id="type_id">
-		@for(p_type <- prod_type){
-			<option value="@p_type.id">@p_type.name</option>
-		}
-	  </select>
-
-
-		@CSRF.formField
-
-		<div class="buttons">
-			<input type="submit" value="Add Product"/>
-		</div>
-
-	  	<div class="buttons">
-			<a href="@routes.ProductController.getProducts()" >Get all products</a>
-		</div>
-	}
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>$Title$</title>
+    </head>
+    <body>
+$END$
+    </body>
+</html>
