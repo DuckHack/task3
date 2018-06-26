@@ -1,4 +1,5 @@
 [debug] Copy resource mappings: 
+[debug] 	(/home/andreik/studies/2d_Sem/e-buisnes/task3/conf/silhouette.conf,/home/andreik/studies/2d_Sem/e-buisnes/task3/target/scala-2.12/classes/silhouette.conf)
 [debug] 	(/home/andreik/studies/2d_Sem/e-buisnes/task3/conf/logback.xml,/home/andreik/studies/2d_Sem/e-buisnes/task3/target/scala-2.12/classes/logback.xml)
 [debug] 	(/home/andreik/studies/2d_Sem/e-buisnes/task3/conf/evolutions,/home/andreik/studies/2d_Sem/e-buisnes/task3/target/scala-2.12/classes/evolutions)
 [debug] 	(/home/andreik/studies/2d_Sem/e-buisnes/task3/conf/routes,/home/andreik/studies/2d_Sem/e-buisnes/task3/target/scala-2.12/classes/routes)

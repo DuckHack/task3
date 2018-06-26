@@ -20,7 +20,7 @@ class BasketController @Inject()(basketRepository: BasketRepository,
 
   val basketForm: Form[CreateBasketForm] = Form {
     mapping(
-      "user_id" -> number
+      "user_id" -> nonEmptyText
     )(CreateBasketForm.apply)(CreateBasketForm.unapply)
   }
 
@@ -62,11 +62,18 @@ class BasketController @Inject()(basketRepository: BasketRepository,
     )
   }
 
+
+  def add (user_id: String) = Action.async { implicit request =>
+    // Bind the form first, then fold the result, passing a function to handle errors, and a function to handle succes.
+    basketRepository.create(user_id).map { id =>
+      // If successful, we simply redirect to the index page.
+      Ok(Json.toJson(id))
+    }
+  }
+
+
   def delBasket = Action.async { implicit request =>
-
     deleteForm.bindFromRequest.fold(
-
-
       errorForm => {
         println(errorForm);
         Future.successful(
@@ -75,7 +82,7 @@ class BasketController @Inject()(basketRepository: BasketRepository,
       },
       // There were no errors in the from, so create the person.
       basket => {
-        basketRepository.del(basket.user_id).map { _ =>
+        basketRepository.del(basket.id).map { _ =>
           // If successful, we simply redirect to the index page.
           Redirect(routes.BasketController.baskets).flashing("success" -> "product.deleted")
         }
@@ -94,9 +101,9 @@ class BasketController @Inject()(basketRepository: BasketRepository,
     }
   }
 
-  def get(user_id: String) = Action.async { implicit request =>
 
-    basketRepository.get(user_id.toInt).map{ basket =>
+  def get(us_id: String) = Action.async { implicit request =>
+    basketRepository.get(us_id).map{ basket =>
       println(basket)
       Ok(Json.toJson(basket))
     }
@@ -105,5 +112,5 @@ class BasketController @Inject()(basketRepository: BasketRepository,
 
 }
 
-case class DeleteBasketForm(user_id: Int)
-case class CreateBasketForm(user_id: Int)
+case class DeleteBasketForm(id: Int)
+case class CreateBasketForm(user_id: String)

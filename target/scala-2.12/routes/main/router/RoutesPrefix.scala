@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/andreik/studies/2d_Sem/e-buisnes/task3/conf/routes
-// @DATE:Sun Jun 17 17:43:07 MSK 2018
+// @DATE:Fri Jun 22 20:58:04 MSK 2018
 
 
 package router {

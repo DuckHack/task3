@@ -71,7 +71,7 @@ class OrderController @Inject()(orderRepository: OrderRepository, basketReposito
       },
       // There were no errors in the from, so create the person.
       order => {
-        basketRepository.del(order.id).map { _ =>
+        orderRepository.del(order.id).map { _ =>
           // If successful, we simply redirect to the index page.
           Redirect(routes.OrderController.order).flashing("success" -> "order.deleted")
         }
@@ -94,6 +94,16 @@ class OrderController @Inject()(orderRepository: OrderRepository, basketReposito
       Ok(Json.toJson(orderJoin))
     }
   }
+
+
+  def add (basket_id: String, total: String) = Action.async { implicit request =>
+    // Bind the form first, then fold the result, passing a function to handle errors, and a function to handle succes.
+    orderRepository.create(basket_id.toInt, total.toInt).map { id =>
+      // If successful, we simply redirect to the index page.
+      Ok(Json.toJson(id))
+    }
+  }
+
 
 }
 

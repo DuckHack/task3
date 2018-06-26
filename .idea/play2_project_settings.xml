@@ -41,6 +41,13 @@
             </ProjectSettingsEntry>
           </value>
         </entry>
+        <entry key="scala-play-slick-react">
+          <value>
+            <ProjectSettingsEntry>
+              <option name="playDistrPath" value="$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.12/jars/play_2.12-2.6.13.jar" />
+            </ProjectSettingsEntry>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

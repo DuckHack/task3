@@ -74,11 +74,28 @@ class BasketProductController @Inject()(productRepository: ProductRepository,
     }
   }
 
-  def del(prod_id: String) = Action.async { implicit request =>
-    basketProductRepository.del(prod_id.toInt).map { _ =>
+  def delByProdId(prod_id: String) = Action.async { implicit request =>
+    basketProductRepository.delByProdId(prod_id.toInt).map { _ =>
       Redirect(routes.BasketProductController.basketProducts).flashing("success" -> "product.deleted")
     }
   }
+
+  def delByBasketId(basket_id: String) = Action.async { implicit request =>
+    basketProductRepository.delByBasketId(basket_id.toInt).map { _ =>
+      Redirect(routes.BasketProductController.basketProducts).flashing("success" -> "product.deleted")
+    }
+  }
+
+
+
+  def add (prod_id: String, bask_id: String) = Action.async { implicit request =>
+    // Bind the form first, then fold the result, passing a function to handle errors, and a function to handle succes.
+    basketProductRepository.create(prod_id.toInt, bask_id.toInt).map { id =>
+      // If successful, we simply redirect to the index page.
+      Ok(Json.toJson(id))
+    }
+  }
+
 }
 
 case class CreateBasketProductForm(product_id: Int, basket_id: Int)

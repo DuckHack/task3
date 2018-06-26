@@ -24,7 +24,7 @@ class BasketRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impl
     /** The ID column, which is the primary key, and auto incremented */
     def id = column[Int]("id", O.PrimaryKey, O.AutoInc)
     /** The name column */
-    def user_id = column[Int]("user_id")
+    def user_id = column[String]("user_id")
 
     /**
       * This is the tables default "projection".
@@ -47,7 +47,7 @@ class BasketRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impl
     * This is an asynchronous operation, it will return a future of the created person, which can be used to obtain the
     * id for that person.
     */
-  def create(user_id: Int): Future[Basket] = db.run {
+  def create(user_id: String): Future[Basket] = db.run {
     // We create a projection of just the name and age columns, since we're not inserting a value for the id column
     (basket.map(b => (b.user_id))
       // Now define it to return the id, because we want to know what id was generated for the person
@@ -58,6 +58,8 @@ class BasketRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impl
       // And finally, insert the person into the database
       ) += (user_id)
   }
+
+
   /**
     * List all the people in the database.
     */
@@ -71,8 +73,9 @@ class BasketRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impl
     basket.filter(_.id === del_id).delete
   }
 
-  def get(user_id: Int): Future[Seq[Basket]] = db.run {
-    println("inside of getBasket by id " + user_id)
-    basket.filter(_.user_id === user_id).result
+  def get(us_id: String): Future[Seq[Basket]] = db.run {
+    println("inside of getBasket by id " + us_id)
+    basket.filter(_.user_id === us_id).result
   }
+
 }

@@ -68,7 +68,7 @@ class PayRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, orderRe
       returning pay.map(_.id)
       // And we define a transformation for the returned value, which combines our original parameters with the
       // returned id
-      into {case ((order_id),id) => Pay(id,order_id)}
+      into {case ((order_id),id) => Pay(id, order_id)}
       // And finally, insert the person into the database
       ) += (order_id)
   }
@@ -82,11 +82,15 @@ class PayRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, orderRe
 
 
   //case class JoinedPay(id: Int, total: Int, order_id: Int)
-  def get(basket_id: Int): Future[Seq[JoinedPay]] = db.run {
-    println("inside of pay" + basket_id)
-    order.filter(_.id=== basket_id).join(pay).on(_.id === _.order_id).
+  def get(in_basket_id: Int): Future[Seq[JoinedPay]] = db.run {
+    println("inside of pay, baset_id -> " + in_basket_id)
+
+  /*  order.filter(_.basket_id === in_basket_id).result.map(s =>(
+      pay.filter(_.order_id === s._1._1.id).
+        result.map()))*/
+    order.filter(_.basket_id === in_basket_id).join(pay).on(_.id === _.order_id).
       result.map(s => s.map(
-      a => new JoinedPay(a._2.id, a._1.total, a._1.id)))
+      a => new JoinedPay(a._2.id, a._1.total)))
   }
 
 

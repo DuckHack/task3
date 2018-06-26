@@ -23,7 +23,7 @@ create table "opinion" (
 
 create table "basket"(
   "id" integer primary key autoincrement,
-  "user_id" integer not null
+  "user_id" varchar not null
 );
 
 create table "basket_product" (

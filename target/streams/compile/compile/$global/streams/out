@@ -1,4 +1,7 @@
-[error] /home/andreik/studies/2d_Sem/e-buisnes/task3/app/controllers/PayController.scala:79:9: not found: value basketRepository
-[error]         basketRepository.del(pay.id).map { _ =>
-[error]         ^
+[error] /home/andreik/studies/2d_Sem/e-buisnes/task3/app/models/BasketRepository.scala:90:40: type mismatch;
+[error]  found   : BasketRepository.this.dbConfig.profile.StreamingProfileAction[Seq[BasketRepository.this.BasketTable#TableElementType],BasketRepository.this.BasketTable#TableElementType,slick.dbio.Effect.Read]
+[error]     (which expands to)  slick.sql.FixedSqlStreamingAction[Seq[models.Basket],models.Basket,slick.dbio.Effect.Read]
+[error]  required: slick.dbio.DBIOAction[models.Basket,slick.dbio.NoStream,Nothing]
+[error]     basket.filter(_.user_id === us_id).result
+[error]                                        ^
 [error] one error found

@@ -64,6 +64,7 @@ class BasketProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvide
       ) += (product_id, basket_id)
   }
 
+
   /**
     * List all the people in the database.
     */
@@ -79,9 +80,14 @@ class BasketProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvide
   }
 
 
-  def del(del_product_id: Int) = db.run {
-    println("inside of del method BasketProduct ->" + del_product_id)
+  def delByProdId(del_product_id: Int) = db.run {
+    println("inside of del method BasketProduct, byProdID ->" + del_product_id)
     basketProduct.filter(_.id === del_product_id).delete
+  }
+
+  def delByBasketId(del_basket_id: Int) = db.run {
+    println("inside of del method BasketProduct, byBasketID ->" + del_basket_id)
+    basketProduct.filter(_.basket_id === del_basket_id).delete
   }
 
 }

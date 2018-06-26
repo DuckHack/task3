@@ -2,89 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07331058-7a4a-464f-98f1-f5a5d33862e5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/JoinedBasketProduct.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/JoinedOrder.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/JoinedPay.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/ApplicationController.scala" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a13db4c-15fc-4c70-a7d3-11abccd20894.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8a13db4c-15fc-4c70-a7d3-11abccd20894.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_code_findbugs_jsr305_1_3_9_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_4_jar.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_4_jar.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/root-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/play2_project_settings.xml" afterPath="$PROJECT_DIR$/.idea/play2_project_settings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/controllers/BasketController.scala" afterPath="$PROJECT_DIR$/app/controllers/BasketController.scala" />
       <change beforePath="$PROJECT_DIR$/app/controllers/BasketProductController.scala" afterPath="$PROJECT_DIR$/app/controllers/BasketProductController.scala" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/KeyWordController.scala" afterPath="$PROJECT_DIR$/app/controllers/KeyWordController.scala" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/OpinionController.scala" afterPath="$PROJECT_DIR$/app/controllers/OpinionController.scala" />
       <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.scala" afterPath="$PROJECT_DIR$/app/controllers/OrderController.scala" />
       <change beforePath="$PROJECT_DIR$/app/controllers/PayController.scala" afterPath="$PROJECT_DIR$/app/controllers/PayController.scala" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/ProductController.scala" afterPath="$PROJECT_DIR$/app/controllers/ProductController.scala" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/ProductTypeController.scala" afterPath="$PROJECT_DIR$/app/controllers/ProductTypeController.scala" />
+      <change beforePath="$PROJECT_DIR$/app/models/Basket.scala" afterPath="$PROJECT_DIR$/app/models/Basket.scala" />
       <change beforePath="$PROJECT_DIR$/app/models/BasketProductRepository.scala" afterPath="$PROJECT_DIR$/app/models/BasketProductRepository.scala" />
       <change beforePath="$PROJECT_DIR$/app/models/BasketRepository.scala" afterPath="$PROJECT_DIR$/app/models/BasketRepository.scala" />
-      <change beforePath="$PROJECT_DIR$/app/models/KeyWordRepository.scala" afterPath="$PROJECT_DIR$/app/models/KeyWordRepository.scala" />
-      <change beforePath="$PROJECT_DIR$/app/models/OpinionRepository.scala" afterPath="$PROJECT_DIR$/app/models/OpinionRepository.scala" />
-      <change beforePath="$PROJECT_DIR$/app/models/OrderRepository.scala" afterPath="$PROJECT_DIR$/app/models/OrderRepository.scala" />
+      <change beforePath="$PROJECT_DIR$/app/models/JoinedBasketProduct.scala" afterPath="$PROJECT_DIR$/app/models/JoinedBasketProduct.scala" />
+      <change beforePath="$PROJECT_DIR$/app/models/JoinedPay.scala" afterPath="$PROJECT_DIR$/app/models/JoinedPay.scala" />
       <change beforePath="$PROJECT_DIR$/app/models/PayRepository.scala" afterPath="$PROJECT_DIR$/app/models/PayRepository.scala" />
-      <change beforePath="$PROJECT_DIR$/app/models/Product.scala" afterPath="$PROJECT_DIR$/app/models/Product.scala" />
-      <change beforePath="$PROJECT_DIR$/app/models/ProductRepository.scala" afterPath="$PROJECT_DIR$/app/models/ProductRepository.scala" />
-      <change beforePath="$PROJECT_DIR$/app/models/ProductTypeRepository.scala" afterPath="$PROJECT_DIR$/app/models/ProductTypeRepository.scala" />
-      <change beforePath="$PROJECT_DIR$/app/views/addProd.scala.html" afterPath="$PROJECT_DIR$/app/views/addProd.scala.html" />
-      <change beforePath="$PROJECT_DIR$/app/views/godPage.scala.html" afterPath="$PROJECT_DIR$/app/views/godPage.scala.html" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
       <change beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
       <change beforePath="$PROJECT_DIR$/conf/evolutions/default/1.sql" afterPath="$PROJECT_DIR$/conf/evolutions/default/1.sql" />
       <change beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
       <change beforePath="$PROJECT_DIR$/ebiznes.sqlite" afterPath="$PROJECT_DIR$/ebiznes.sqlite" />
-      <change beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$d99e5f2cd098f3f2f5df$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$d99e5f2cd098f3f2f5df.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$d99e5f2cd098f3f2f5df.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/default/task3-build-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/default/task3-build-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/default/task3-build-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/default/task3-build-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-compile-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-compile.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-compile.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-optional.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-optional.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-plugin.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-pom.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-pom.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-provided.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-provided.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-runtime-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-runtime.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-runtime.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-scala-tool.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-test-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-test.xml" afterPath="$PROJECT_DIR$/project/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-build-test.xml" />
       <change beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/out" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" />
       <change beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/project/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/project/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/project/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2e2e14dfe6c2aa9d8f84$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2e2e14dfe6c2aa9d8f84.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2e2e14dfe6c2aa9d8f84.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5605c68837e761455aca$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5605c68837e761455aca.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5605c68837e761455aca.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59f28c7f30e2c94c2ad8$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59f28c7f30e2c94c2ad8.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59f28c7f30e2c94c2ad8.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6dfff28795f8e78ac693$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6dfff28795f8e78ac693.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6dfff28795f8e78ac693.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8bf7772b1f405a5f8073$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8bf7772b1f405a5f8073.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8bf7772b1f405a5f8073.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9177e4ab36f79d72ac8e$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9177e4ab36f79d72ac8e.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9177e4ab36f79d72ac8e.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b5a4ebec840e24236819$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b5a4ebec840e24236819.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b5a4ebec840e24236819.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c79b68e44a59f7397a64$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c79b68e44a59f7397a64.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c79b68e44a59f7397a64.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d0eb0e85d18d7f1f5d8a$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d0eb0e85d18d7f1f5d8a.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d0eb0e85d18d7f1f5d8a.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d851933008410b64f67a$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d851933008410b64f67a.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d851933008410b64f67a.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e73c03f2e627b1b7f121$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e73c03f2e627b1b7f121.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e73c03f2e627b1b7f121.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$39bffd3ce893b2021ab7$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$39bffd3ce893b2021ab7$.class" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4260d8c17e7e89d0262f$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$4260d8c17e7e89d0262f$.class" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$524dd872dadc19906485$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$524dd872dadc19906485$.class" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8bd714c0b7495ca0c425$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$8bd714c0b7495ca0c425$.class" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9f3694843a2458401b2f$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$9f3694843a2458401b2f$.class" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d8fa0e373251919196c3$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$d8fa0e373251919196c3$.class" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e859b25ee47b4d42c85b$.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e859b25ee47b4d42c85b.cache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e859b25ee47b4d42c85b.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/task3-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/task3-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/task3-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/task3-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-compile-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-compile.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-optional.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-pom.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-provided.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-runtime-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-runtime.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-scala-tool.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-test-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-test.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-task3-build-test.xml" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/BasketController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/BasketController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/BasketProductController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/BasketProductController.class" />
@@ -92,90 +76,133 @@
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateBasketForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateBasketForm.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateBasketProductForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateBasketProductForm$.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateBasketProductForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateBasketProductForm.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateKeyWordForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateKeyWordForm$.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateKeyWordForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateKeyWordForm.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateOpinionForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateOpinionForm$.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateOpinionForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateOpinionForm.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateOrderForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateOrderForm$.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateOrderForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateOrderForm.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreatePayForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreatePayForm$.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreatePayForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreatePayForm.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateProductForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateProductForm$.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateProductForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateProductForm.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateProductTypeForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateProductTypeForm$.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateProductTypeForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/CreateProductTypeForm.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/KeyWordController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/KeyWordController.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/OpinionController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/OpinionController.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DelOrderForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DelOrderForm$.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DelOrderForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DelOrderForm.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DelPayForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DelPayForm$.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DelPayForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DelPayForm.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DeleteBasketForm$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DeleteBasketForm$.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DeleteBasketForm.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/DeleteBasketForm.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/OrderController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/OrderController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/PayController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/PayController.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ProductController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ProductController.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ProductTypeController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ProductTypeController.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAssets.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAssets.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseBasketController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseBasketController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseBasketProductController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseBasketProductController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseKeyWordController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseKeyWordController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseMainController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseMainController.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseOpinionController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseOpinionController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseOrderController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseOrderController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReversePayController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReversePayController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseProductController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseProductController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseProductTypeController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseProductTypeController.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseBasketController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseBasketController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseBasketProductController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseBasketProductController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseKeyWordController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseKeyWordController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseMainController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseMainController.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseOpinionController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseOpinionController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseOrderController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseOrderController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReversePayController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReversePayController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseProductController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseProductController.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseProductTypeController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseProductTypeController.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/routes$javascript.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/routes$javascript.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/routes.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/routes.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/evolutions/default/1.sql" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/evolutions/default/1.sql" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/Basket$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/Basket$.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/Basket.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/Basket.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/BasketProductRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/BasketProductRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/BasketRepository$BasketTable.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/BasketRepository$BasketTable.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/BasketRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/BasketRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/KeyWordRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/KeyWordRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/OpinionRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/OpinionRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/OrderRepository$OrderTable.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/OrderRepository$OrderTable.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/OrderRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/OrderRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/JoinedBasketProduct$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/JoinedBasketProduct$.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/JoinedBasketProduct.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/JoinedBasketProduct.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/JoinedPay$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/JoinedPay$.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/JoinedPay.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/JoinedPay.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/PayRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/PayRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/Product$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/Product$.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/Product.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/Product.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/ProductRepository$ProductTable.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/ProductRepository$ProductTable.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/ProductRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/ProductRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/models/ProductTypeRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/models/ProductTypeRepository.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/routes" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/routes" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/addProd$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/addProd$.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/addProd.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/addProd.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/basketProduct$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/basketProduct$.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/opinions$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/opinions$.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/index$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/index$.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/order$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/order$.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-98ec89c315ed408f615fff2c4774286d17323b01/1.1.3/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-98ec89c315ed408f615fff2c4774286d17323b01/1.1.3/resolved.xml.properties" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-98ec89c315ed408f615fff2c4774286d17323b01/1.1.3/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-98ec89c315ed408f615fff2c4774286d17323b01/1.1.3/resolved.xml.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/play-scala-slick-example/play-scala-slick-example$sources/2.6.x/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/play-scala-slick-example/play-scala-slick-example$sources/2.6.x/resolved.xml.properties" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/play-scala-slick-example/play-scala-slick-example$sources/2.6.x/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/play-scala-slick-example/play-scala-slick-example$sources/2.6.x/resolved.xml.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/play-scala-slick-example/play-scala-slick-example_2.12/2.6.x/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/play-scala-slick-example/play-scala-slick-example_2.12/2.6.x/resolved.xml.properties" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/play-scala-slick-example/play-scala-slick-example_2.12/2.6.x/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/play-scala-slick-example/play-scala-slick-example_2.12/2.6.x/resolved.xml.xml" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-compile.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-compile.xml" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-optional.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-optional.xml" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-provided.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-provided.xml" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-runtime.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-runtime.xml" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-test.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-test.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/addProd.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/addProd.template.scala" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-compile-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-compile-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-compile.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-compile.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-debian.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-debian.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-docker.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-docker.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-docs.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-docs.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-linux.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-linux.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-optional.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-optional.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-plugin.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-pom.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-pom.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-provided.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-provided.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-rpm.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-rpm.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-runtime-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-runtime.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-runtime.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-scala-tool.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-scala-tool.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-test-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-test-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-test.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-test.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-universal-docs.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-universal-docs.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-universal-src.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-universal-src.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-universal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-universal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-windows.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example$sources-windows.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-compile-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-compile.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-compile.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-debian.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-debian.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-docker.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-docker.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-docs.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-docs.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-linux.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-linux.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-optional.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-optional.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-plugin.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-pom.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-pom.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-provided.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-provided.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-rpm.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-rpm.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-runtime-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-runtime.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-runtime.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-scala-tool.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-scala-tool.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-test-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-test-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-test.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-test.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-universal-docs.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-universal-docs.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-universal-src.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-universal-src.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-universal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-universal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-windows.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/play-scala-slick-example-play-scala-slick-example_2.12-windows.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" />
       <change beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-scala-slick-example/2.6.x/images/favicon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-scala-slick-example/2.6.x/javascripts/jquery-2.2.0.min.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -214,6 +241,11 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ebiznes.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -227,21 +259,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/routes">
+      <file leaf-file-name="1.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/evolutions/default/1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            <state relative-caret-position="94">
+              <caret line="41" column="2" lean-forward="false" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderController.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/OrderController.scala">
+      <file leaf-file-name="routes" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="60" column="2" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -250,48 +282,48 @@
       <file leaf-file-name="OrderRepository.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/OrderRepository.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PayRepository.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/PayRepository.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PayController.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PayController.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/PayController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="1674">
+              <caret line="103" column="33" lean-forward="false" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasketController.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/BasketController.scala">
+      <file leaf-file-name="ProductController.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="64" column="2" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="1422">
+              <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasketRepository.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/BasketRepository.scala">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8a13db4c-15fc-4c70-a7d3-11abccd20894/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="68" column="2" lean-forward="false" selection-start-line="68" selection-start-column="2" selection-end-line="71" selection-end-column="3" />
+            <state relative-caret-position="18">
+              <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -302,15 +334,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Scala Worksheet" />
         <option value="Package Object" />
         <option value="HTML File" />
+        <option value="Scala Worksheet" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ColumnOptions</find>
       <find>map</find>
       <find>cat</find>
       <find>productFormat</find>
@@ -337,6 +368,10 @@
       <find>Long</find>
       <find>long</find>
       <find>priva</find>
+      <find>user_id</find>
+      <find>String</find>
+      <find>Stri</find>
+      <find>returning</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -350,22 +385,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/TypeReposytory.scala" />
-        <option value="$PROJECT_DIR$/app/models/Category.scala" />
-        <option value="$PROJECT_DIR$/app/models/CategoryRepository.scala" />
-        <option value="$PROJECT_DIR$/app/models/TypeRepository.scala" />
-        <option value="$PROJECT_DIR$/app/models/Type.scala" />
-        <option value="$PROJECT_DIR$/app/models/Opinion.scala" />
-        <option value="$PROJECT_DIR$/app/models/BasketProduct.scala" />
-        <option value="$PROJECT_DIR$/app/models/ProductType.scala" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8a13db4c-15fc-4c70-a7d3-11abccd20894/console_1.sql" />
-        <option value="$PROJECT_DIR$/app/views/opinions.scala.html" />
         <option value="$PROJECT_DIR$/app/views/index.scala.html" />
         <option value="$PROJECT_DIR$/app/views/baskets.scala.html" />
         <option value="$PROJECT_DIR$/app/models/KeyWord.scala" />
         <option value="$PROJECT_DIR$/app/views/keyWords.scala.html" />
         <option value="$PROJECT_DIR$/app/views/simpleJson.scala.html" />
-        <option value="$PROJECT_DIR$/app/models/Basket.scala" />
         <option value="$PROJECT_DIR$/app/models/Order.scala" />
         <option value="$PROJECT_DIR$/app/views/order.scala.html" />
         <option value="$PROJECT_DIR$/app/models/Pay.scala" />
@@ -378,29 +402,40 @@
         <option value="$PROJECT_DIR$/app/models/Product.scala" />
         <option value="$PROJECT_DIR$/app/views/godPage.scala.html" />
         <option value="$PROJECT_DIR$/app/views/addProd.scala.html" />
-        <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/controllers/ProductTypeController.scala" />
         <option value="$PROJECT_DIR$/app/models/ProductTypeRepository.scala" />
         <option value="$PROJECT_DIR$/app/controllers/KeyWordController.scala" />
         <option value="$PROJECT_DIR$/app/models/KeyWordRepository.scala" />
-        <option value="$PROJECT_DIR$/app/models/JoinedBasketProduct.scala" />
         <option value="$PROJECT_DIR$/app/models/JoinedOrder.scala" />
-        <option value="$PROJECT_DIR$/conf/evolutions/default/1.sql" />
-        <option value="$PROJECT_DIR$/app/models/JoinedPay.scala" />
         <option value="$PROJECT_DIR$/app/controllers/ProductController.scala" />
         <option value="$PROJECT_DIR$/app/models/OpinionRepository.scala" />
         <option value="$PROJECT_DIR$/app/controllers/OpinionController.scala" />
         <option value="$PROJECT_DIR$/app/models/ProductRepository.scala" />
+        <option value="$PROJECT_DIR$/app/models/OrderRepository.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/ApplicationController.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/SocialAuthController.scala" />
+        <option value="$PROJECT_DIR$/app/views/home.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/mainAuth.scala.html" />
+        <option value="$PROJECT_DIR$/app/controllers/SignInController.scala" />
+        <option value="$PROJECT_DIR$/app/views/signIn.scala.html" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/conf/application.conf" />
+        <option value="$PROJECT_DIR$/conf/silhouette.conf" />
+        <option value="$PROJECT_DIR$/app/modules/SilhouetteModule.scala" />
+        <option value="$PROJECT_DIR$/conf/evolutions/default/1.sql" />
+        <option value="$PROJECT_DIR$/app/models/Basket.scala" />
+        <option value="$PROJECT_DIR$/app/models/JoinedBasketProduct.scala" />
         <option value="$PROJECT_DIR$/app/models/BasketRepository.scala" />
         <option value="$PROJECT_DIR$/app/controllers/BasketController.scala" />
         <option value="$PROJECT_DIR$/app/controllers/BasketProductController.scala" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8a13db4c-15fc-4c70-a7d3-11abccd20894/console.sql" />
         <option value="$PROJECT_DIR$/app/models/BasketProductRepository.scala" />
-        <option value="$PROJECT_DIR$/app/controllers/OrderController.scala" />
-        <option value="$PROJECT_DIR$/app/models/OrderRepository.scala" />
-        <option value="$PROJECT_DIR$/app/models/PayRepository.scala" />
-        <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/controllers/PayController.scala" />
+        <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/app/models/JoinedPay.scala" />
+        <option value="$PROJECT_DIR$/app/models/PayRepository.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/OrderController.scala" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8a13db4c-15fc-4c70-a7d3-11abccd20894/console.sql" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -431,8 +466,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
-    <option name="width" value="794" />
-    <option name="height" value="643" />
+    <option name="width" value="683" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -450,48 +485,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="play-scala-slick-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scala-play-slick-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="task3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="play-scala-slick-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scala-play-slick-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="task3" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="play-scala-slick-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scala-play-slick-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="task3" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="play-scala-slick-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scala-play-slick-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="task3" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
-              <item name="play-scala-slick-example" type="58d84e3e:PackageViewProjectNode" />
+              <item name="scala-play-slick-react" type="58d84e3e:PackageViewProjectNode" />
               <item name="root" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="scala-play-slick-react" type="58d84e3e:PackageViewProjectNode" />
+              <item name="root-build" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,17 +541,20 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)&#10;Amazon Redshift" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="TODO_SCOPE" value="All Places" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controllers" />
       <recent name="models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views" />
+      <recent name="$PROJECT_DIR$/conf" />
+      <recent name="$PROJECT_DIR$/app/controllers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -616,13 +659,13 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1528998633595" />
+    <option name="lastUpdateTimestamp" value="1529345778101" />
     <option name="availableProjects">
       <map>
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="play-scala-slick-example" />
+              <option name="name" value="scala-play-slick-react" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
@@ -713,11 +756,47 @@
       <workItem from="1529070002290" duration="6936000" />
       <workItem from="1529171603051" duration="7233000" />
       <workItem from="1529243087768" duration="2687000" />
+      <workItem from="1529267239028" duration="2246000" />
+      <workItem from="1529333898295" duration="10493000" />
+      <workItem from="1529348424645" duration="1251000" />
+      <workItem from="1529407042901" duration="819000" />
+      <workItem from="1529408508845" duration="871000" />
+      <workItem from="1529435181148" duration="1956000" />
+      <workItem from="1529444820226" duration="3141000" />
+      <workItem from="1529451244972" duration="692000" />
+      <workItem from="1529490166293" duration="1074000" />
+      <workItem from="1529493311845" duration="569000" />
+      <workItem from="1529495376722" duration="1550000" />
+      <workItem from="1529503420826" duration="1409000" />
+      <workItem from="1529508061798" duration="745000" />
+      <workItem from="1529586397919" duration="745000" />
+      <workItem from="1529596892896" duration="1206000" />
+      <workItem from="1529600684048" duration="3519000" />
+      <workItem from="1529605035615" duration="3635000" />
+      <workItem from="1529609802110" duration="2296000" />
+      <workItem from="1529614947450" duration="37000" />
+      <workItem from="1529615927817" duration="3906000" />
+      <workItem from="1529662024243" duration="3213000" />
+      <workItem from="1529673192120" duration="894000" />
+      <workItem from="1529678789199" duration="2705000" />
+      <workItem from="1529682778154" duration="3513000" />
+      <workItem from="1529691649495" duration="4657000" />
+      <workItem from="1529768999793" duration="599000" />
+      <workItem from="1529770551566" duration="843000" />
+      <workItem from="1529775270740" duration="861000" />
+      <workItem from="1529833869974" duration="58000" />
+      <workItem from="1529847647157" duration="4177000" />
+      <workItem from="1529874120032" duration="719000" />
+      <workItem from="1529875505795" duration="6079000" />
+      <workItem from="1529923059930" duration="4433000" />
+      <workItem from="1529952341456" duration="6120000" />
+      <workItem from="1530028386247" duration="982000" />
+      <workItem from="1530030418503" duration="369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284389000" />
+    <option name="totallyTimeSpent" value="366771000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -739,15 +818,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5614035" sideWeight="0.5121396" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5606469" sideWeight="0.5121396" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24512535" sideWeight="0.48786038" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71451354" sideWeight="0.48786038" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32860824" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22306526" sideWeight="0.4934688" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20485584" sideWeight="0.4934688" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280116" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26403642" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2092084" sideWeight="0.50274724" order="1" side_tool="true" content_ui="tabs" />
@@ -762,10 +841,10 @@
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11756168" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23840207" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.393531" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26044568" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45543176" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.76555026" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11559889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -781,98 +860,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/productType.html" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8a13db4c-15fc-4c70-a7d3-11abccd20894/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ProductType.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7fed09e9/8a13db4c-15fc-4c70-a7d3-11abccd20894/main.product_type" />
-    <entry file="file://$PROJECT_DIR$/app/models/KeyWord.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="50" lean-forward="false" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/simpleJson.scala.html" />
-    <entry file="file://$PROJECT_DIR$/app/models/Order.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Pay.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="73" lean-forward="false" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/controllers.ProductController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>controllers.ProductController</OriginalElement>
-          <nodes>
-            <node x="" y="">play.api.mvc.MessagesAbstractController</node>
-            <node x="" y="">controllers.ProductController</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="108.0" y="56.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/godPage.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/basketProduct.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/productTypes.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/keyWords.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/baskets.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -943,48 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/KeyWordController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MainController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductTypeController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="90" column="46" lean-forward="true" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/BasketProduct.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1006,63 +951,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/evolutions/default/1.sql">
+    <entry file="file://$PROJECT_DIR$/app/models/ProductRepository.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="2" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="47" selection-end-column="2" />
+        <state relative-caret-position="319">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="13" selection-start-column="154" selection-end-line="93" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ApplicationController.sc" />
+    <entry file="file://$PROJECT_DIR$/app/views/mainAuth.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/MainController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/signIn.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="73" lean-forward="false" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/SilhouetteModule.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5940">
+          <caret line="330" column="6" lean-forward="false" selection-start-line="330" selection-start-column="6" selection-end-line="330" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ApplicationController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SignInController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SocialAuthController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/AuthToken.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/silhouette.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="53" column="63" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/JoinedBasketProduct.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/OpinionController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="65" column="15" lean-forward="true" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/OpinionRepository.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="87" column="35" lean-forward="true" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ProductRepository.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="13" selection-start-column="154" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/JoinedPay.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8a13db4c-15fc-4c70-a7d3-11abccd20894/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="126">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1070,78 +1082,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BasketProductController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/BasketProductRepository.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="76" column="104" lean-forward="false" selection-start-line="76" selection-start-column="104" selection-end-line="76" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BasketController.scala">
+    <entry file="file://$PROJECT_DIR$/app/models/BasketRepository.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="64" column="2" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/OpinionRepository.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/JoinedPay.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/PayRepository.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+        <state relative-caret-position="18">
+          <caret line="90" column="50" lean-forward="false" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/BasketProductRepository.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BasketProductController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="91" column="41" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PayController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="103" column="33" lean-forward="false" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1422">
+          <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductTypeController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BasketController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="79" column="40" lean-forward="false" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/KeyWordController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/OpinionController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/OrderRepository.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/OrderController.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="60" column="2" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/BasketRepository.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="68" column="2" lean-forward="false" selection-start-line="68" selection-start-column="2" selection-end-line="71" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="692">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+        <state relative-caret-position="342">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PayController.scala">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8a13db4c-15fc-4c70-a7d3-11abccd20894/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        <state relative-caret-position="18">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/evolutions/default/1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="41" column="2" lean-forward="false" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1199,7 +1271,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>root-build</last-edited>
+          <last-edited>root</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1211,6 +1283,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>sbt: aopalliance:aopalliance:1.0:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

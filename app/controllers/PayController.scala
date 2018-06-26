@@ -99,6 +99,14 @@ class PayController @Inject()(payRepository: PayRepository, orderRepository: Ord
       Ok(Json.toJson(payJoin))
     }
   }
+
+  def add (order_id: String) = Action.async { implicit request =>
+    payRepository.create(order_id.toInt).map { id =>
+      println("addPayCOntroller, id -> " + id)
+      Ok(Json.toJson(id))
+    }
+  }
+
 }
 
 case class DelPayForm(id: Int)
